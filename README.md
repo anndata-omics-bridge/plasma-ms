@@ -270,5 +270,15 @@ Open an issue. The most valuable contributions, in order:
 
 ## Licence
 
-Apache-2.0. Third-party reference material retains its own terms; see the licence column in §4 and
-the table in §2.
+**CC BY 4.0** for everything in this repository — the panels, the metric catalogue, and the prose.
+This is reference data, not software, and a software licence on a dataset creates exactly the reuse
+ambiguity the panels exist to remove. Attribution is the only condition: cite this repository.
+
+**MIT** for any scripts added here later, so code can move freely between this repository and the
+rest of the [anndata-omics-bridge](https://github.com/anndata-omics-bridge) spine, which is MIT
+throughout.
+
+**Third-party reference material retains its own terms, and CC BY 4.0 here does not override them.**
+`data/geyer2019_panels.csv` is derived from the supplementary tables of Geyer et al. 2019 and must
+be cited as that paper, not as this repository; see §3 and the references in §7. The licence column
+in §4 and the table in §2 record the terms of every other external source.
