@@ -37,7 +37,8 @@ and batch-associated structure. These are broader targets, not minimum deliverab
 
 - Define the inputs, output, interpretation, data level, and validation dataset for each quality
   measure.
-- Implement panel coverage, marker precision, and reference-dataset comparison. Define candidate
+- Implement panel coverage, marker precision, and reference-dataset comparison. Include an
+  abundance-profile or rank-concordance candidate when a suitable reference exists. Define candidate
   cellular-contamination scores from documented panels and implement at least one for evaluation.
 - Add the resulting annotations, scores, statistics, provenance, and relationships to MuData.
 - Evaluate each applicable core protein-level measure on at least two MS plasma datasets and one
@@ -192,6 +193,13 @@ Participants will specify the following contract for every quality measure:
 | Marker precision | How variable are the expected markers under repeated measurement? | A defined per-marker and panel summary | Participants must define the replicate structure, quantitative scale, and missing-value treatment before implementation |
 | Reference comparison | How does the study compare with reference studies? | Per-marker and study-level comparison | Participants must define a documented normalisation or scale-free comparison; raw MS intensities and Olink values do not share a scale |
 
+Reference comparison may include abundance-profile or rank-concordance measures. Participants may
+compare each sample with repeated control plasma or with a documented external profile. They must
+report proteins lost from and gained relative to the reference separately from the single-number
+summary. The hackathon will evaluate candidate definitions; it will not prescribe Spearman,
+weighted Jaccard, zero-filling, or another formula in advance. Rank concordance describes abundance
+ordering and profile shape. It is not a measure of numerical dynamic range.
+
 The four families are the target scope. The minimum floor is smaller and appears in Section 9.
 Additional measures may use peptide or ion information when those levels add evidence.
 Fragment-dependent measures are DIA-specific and remain future or stretch work.
@@ -260,10 +268,19 @@ Geyer et al. prepared dilution series with counted erythrocytes and platelets to
 associated with increasing cellular contamination and to construct marker panels. These experiments
 support panel derivation; they do not prescribe the formula for a contamination score.
 
+[Korff et al. 2025](https://doi.org/10.1038/s44321-025-00309-0) provide complementary
+workflow-independent and workflow-specific 30-marker panels for platelets, erythrocytes, and PBMCs.
+They also provide pure-plasma reference profiles for five preparation workflows. This repository
+stores the derived tables and their provenance in [`data/`](data/README.md). The workflow-specific
+`Sera Sil 700` results are the nearest available analogue to ENRICH-iST, but they do not define an
+ENRICH-iST threshold. Panel membership may transfer across platforms; absolute intensities and score
+thresholds do not.
+
 The hackathon will treat panel derivation and score definition as separate tasks. Participants will
 propose candidate score definitions, state their required quantitative scale and missing-value
 treatment, and implement at least one for evaluation. The evaluation criterion and dataset must be
-recorded before calculating the result. No candidate formula is fixed in advance.
+recorded before calculating the result. Every score must be accompanied by the number and fraction
+of panel members observed in the sample. No candidate formula is fixed in advance.
 
 Handling contaminants and cellular plasma-contamination markers must remain separate annotations.
 For example, conventional contaminant lists may contain albumin or orthologues of plasma proteins.
@@ -282,6 +299,7 @@ large conversion exercise.
 | `PXD013231` | DIA study of 1,508 plasma samples with interleaved pooled controls and plate and run-order annotations ([Bruderer et al., 2019](https://doi.org/10.1074/mcp.RA118.001288)) | Candidate batch-aware cohort; confirm the mapping between annotations and deposited quantitative reports before use |
 | `PXD029009` | Large scanning-SWATH plasma cohort with a curated 1,189-row SDRF | Candidate cohort-scale test; available phenotype metadata are limited |
 | `PXD056598` | ProteoBench plasma/yeast/*E. coli* benchmark | Existing APB/ProteoBench example; not the biological plasma-QC target |
+| Contributed FGCZ ENRICH-iST cohort | 357 biological EDTA-plasma samples and 11 repeated control preparations across four plates; DIA-NN output from one combined search and four separate per-plate searches of the same raw files | Access controlled; useful for cohort-scale, control-reference, contamination, and batch-aware evaluation. Physical plate comparisons use the combined search; per-plate versus combined results test search-context sensitivity |
 | Olink dataset | Accessible plasma study or executable hand-off agreed with discussion 11 | Protein mapping, assay coverage, marker overlap, replication, and metadata must be checked before the event |
 | Participant datasets | Additional biological plasma studies | Include only when identifiers, metadata, permissions, and study design support a defined measure |
 
@@ -311,6 +329,8 @@ The organisers will complete the following work before the four project days:
   fragment-level information only for DIA datasets where it is available.
 - Publish versioned Parquet panels for plasma biomarkers, cellular contamination, and expected
   plasma proteins.
+- Prepare the Geyer and Korff cellular panels and the Korff pure-plasma reference profiles with
+  versioned provenance. Retain panel coverage beside every candidate contamination score.
 - Secure an accessible Olink plasma dataset or agree on an executable hand-off with the discussion
   11 team.
 - Verify assay-to-protein mapping and panel overlap for the Olink data. Select data that support the
@@ -332,6 +352,8 @@ scientific definitions, implementation, validation, and visualisation.
 - Define the contract for every candidate quality measure.
 - Define candidate cellular-contamination scores and their evaluation criteria. Select at least one
   candidate to implement.
+- Select a candidate abundance-profile or rank-concordance definition when the prepared controls or
+  external reference profiles support it.
 - Select batch and dynamic-range candidates only when the prepared controls and metadata support
   their interpretation.
 - Agree on identifiers and the Olink assay-to-protein mapping.

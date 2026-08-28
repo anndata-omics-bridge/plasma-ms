@@ -62,7 +62,7 @@ The word does too much work. At least two distinct classes matter, and conflatin
 | Class | Examples | Origin | Covered by a list today? |
 | --- | --- | --- | --- |
 | **Handling / process contaminants** | keratin, trypsin autolysis products, BSA, streptavidin and protein A/G from columns, polymers and detergents, column bleed | the lab, not the donor | Yes — the cRAP family and the Hao universal library, and they do it reasonably well |
-| **Matrix contamination** | erythrocyte lysis, platelet activation, coagulation cascade, depletion or enrichment breakthrough, extracellular-vesicle content, tissue leakage, anticoagulant and storage effects | the donor and the draw — **real human protein, in the wrong compartment** | Barely. Three panels exist (§3). For most of the rest we found none. |
+| **Matrix contamination** | erythrocyte lysis, platelet activation, coagulation cascade, depletion or enrichment breakthrough, extracellular-vesicle content, tissue leakage, anticoagulant and storage effects | the donor and the draw — **real human protein, in the wrong compartment** | Published erythrocyte, platelet, PBMC, and coagulation panels exist (§3). Coverage beyond cellular contamination remains sparse. |
 
 The second class is what ruins plasma biomarker studies, and **it is structurally invisible to a
 contaminant FASTA**. The offending proteins are genuine human proteins that belong in the sample —
@@ -83,11 +83,11 @@ That is a reproducible protocol rather than a lookup table, which is the useful 
 re-derived for a new matrix, a new enrichment workflow or a new instrument, and the *result* is what
 gets versioned and attached to the data.
 
-**Three panels is not coverage.** Depletion and enrichment breakthrough, EV content, tissue leakage,
-anticoagulant chemistry and storage-driven proteolysis are all matrix contamination, and we found **no
-published machine-readable panel** for any of them — an absent search result, not a proven absence.
-Deriving one more by the same protocol, against the bead-enrichment data in `PXD063572`/`PXD063593`,
-is a well-shaped piece of work. **If you know of a panel we have missed, please open an issue.**
+**Published cellular panels are not comprehensive sample-quality coverage.** Depletion and enrichment
+breakthrough, EV content, tissue leakage, anticoagulant chemistry, and storage-driven proteolysis also
+change plasma measurements. We found no published machine-readable panels for those effects. That is
+an absent search result, not proof that none exist. **If you know of a panel we missed, please open an
+issue.**
 
 ### The two classes collide
 
@@ -161,6 +161,26 @@ Also worth noting: Table EV2 lists 30/30, while the Figure 2 legend says *"29 qu
 each; the preprint records that `NIF3L1` was excluded for inconsistent identification. The CSV
 carries the **file** counts.
 
+### Korff 2025 cellular panels and reference profiles
+
+[Korff et al. 2025](https://doi.org/10.1038/s44321-025-00309-0) measured pure plasma and isolated
+platelets, erythrocytes, and peripheral blood mononuclear cells (PBMCs). They processed each material
+with five plasma workflows. The derived files in [`data/`](data/README.md) add:
+
+- workflow-independent panels with 30 markers for each of the three cell types;
+- workflow-specific 30-marker panels for `Neat`, `PCA-N`, `SAX`, `Sera Sil 700`, and
+  `Non-magnetic` preparations;
+- pure-plasma abundance profiles for all five workflows; and
+- the 30 most abundant plasma protein groups for each workflow.
+
+These files support two separate tasks. Panel membership provides candidates for contamination
+measures. The pure-plasma profiles provide an external abundance-ordering reference. The latter can
+support profile-shape and rank-concordance tests, but it is not a universal intensity baseline.
+`Sera Sil 700` is the nearest published analogue to ENRICH-iST among these workflows. Panel
+membership may transfer between instruments; absolute values and score thresholds do not. Every
+analysis must therefore record the platform, preparation, quantitative scale, feature mapping, and
+reference used.
+
 ---
 
 ## 4. Datasets
@@ -170,7 +190,7 @@ CC0 or left the default *EBI terms of use*.
 
 | Accession | Study | Design | Software / instrument | Licence |
 | --- | --- | --- | --- | --- |
-| [`PXD063572`](https://www.ebi.ac.uk/pride/archive/projects/PXD063572) + [`PXD063593`](https://www.ebi.ac.uk/pride/archive/projects/PXD063593) | Geyer *et al.* 2025, *EMBO Mol Med* — pre-analytical drivers of bias in **bead-enriched** plasma proteomics | Pre-analytical variables × bead-based enrichment; PRIDE keywords `Cellular contamination`, `Sample quality` | DIA-NN / Orbitrap Astral | CC0 |
+| [`PXD063572`](https://www.ebi.ac.uk/pride/archive/projects/PXD063572) + [`PXD063593`](https://www.ebi.ac.uk/pride/archive/projects/PXD063593) | Korff *et al.* 2025, *EMBO Mol Med* — pre-analytical drivers of bias in **bead-enriched** plasma proteomics | Pre-analytical variables × bead-based enrichment; PRIDE keywords `Cellular contamination`, `Sample quality` | DIA-NN / Orbitrap Astral | CC0 |
 | [`PXD054073`](https://www.ebi.ac.uk/pride/archive/projects/PXD054073) | Multi-centre longitudinal QC of MS proteomics in plasma and serum | 8 centres × 3 timepoints × DDA (544) and DIA (378); PROCAL iRT in every sample; HeLa QC runs; **the paper names the runs it excluded as QC failures** | MaxQuant + DIA-NN | CC0 |
 | [`PXD011749`](https://www.ebi.ac.uk/pride/archive/projects/PXD011749) | Geyer *et al.* 2019 — sample-related biases | **9-step dilution series over 10⁷ with cell counting**; reference proteomes of 5 blood fractions from 20 individuals | MaxQuant / Q Exactive | CC0 |
 | [`PXD002854`](https://www.ebi.ac.uk/pride/archive/projects/PXD002854) | Geyer *et al.* 2016, *Cell Systems* — assess human health and disease | Plasma, serum, erythrocyte; **three community-curated SDRFs** (84 / 73 / 17 rows) | MaxQuant / Q Exactive | EBI terms of use |
@@ -180,6 +200,7 @@ CC0 or left the default *EBI terms of use*.
 | [`PXD029009`](https://www.ebi.ac.uk/pride/archive/projects/PXD029009) | COVID plasma cohort, Scanning SWATH | **Curated 1189-row SDRF** (868 plasma, 559 individuals). Caveat: `age`, `sex`, `BMI` are `not available` for all rows | DIA-NN | CC0 |
 | [`PXD025752`](https://www.ebi.ac.uk/pride/archive/projects/PXD025752) | Time-resolved COVID plasma | **Fragment-level columns in the deposited report** (`Fragment.Quant.Raw`, `Fragment.Correlations`); `batch_info` with `Sample.Type` incl. `SP.QC.Plasma`, `MS.QC` | DIA-NN | CC0 |
 | `PXD056598` | ProteoBench PYE (Plasma / Yeast / E. coli) benchmark | Known spike-in ratios | multiple | CC-BY-4.0 |
+| Contributed FGCZ cohort | ENRICH-iST study with 357 biological EDTA-plasma samples plus 11 repeated control preparations | Four plates; one combined search and four per-plate searches of the same raw files | DIA-NN 2.6 / timsTOF flex | Access controlled |
 
 **Practical note.** Several of these deposit search results alongside very large raw sets — for
 `PXD054073` the 252 search archives are **12.25 GB** against 1038 GB of raw. Start from the search
@@ -203,7 +224,7 @@ which measures cannot be computed from a protein table alone.
 | Level | Metrics |
 | --- | --- |
 | **Sample preparation** (`MS:4000023`, empty) | erythrocyte / haemolysis index; platelet index; coagulation contrast; contaminant abundance fraction; missed-cleavage rate; semi-tryptic fraction |
-| **Quantification** (`MS:4000010`, empty) | replicate CV distribution and median CV; data completeness per sample and per feature; candidate dynamic-range summaries (for example P90 − P10 on a documented log scale); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
+| **Quantification** (`MS:4000010`, empty) | abundance-profile or rank concordance against a documented reference, with lost and gained proteins reported separately; replicate CV distribution and median CV; data completeness per sample and per feature; candidate dynamic-range summaries (for example P90 − P10 on a documented log scale); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
 | **Precursor ion** | q-value distribution and decoy separation; retention-time stability and iRT residuals; charge-state distribution; match-between-runs transfer rate |
 | **Fragment** | peak-shape similarity; transition-ratio consistency; interference / co-isolation; spectral-library similarity |
 | **Run** | TIC, MS1/MS2 counts, injection time, gradient stability |
@@ -213,6 +234,11 @@ The fragment row is not hypothetical: the published metrics that provably cannot
 level — peak-shape similarity, mean profile of relative areas, spectral-library similarity — are the
 Avant-garde curation metrics (Vaca Jacome *et al.* 2020,
 [10.1038/s41592-020-00986-4](https://doi.org/10.1038/s41592-020-00986-4)).
+
+Abundance-profile concordance and numerical dynamic range answer different questions. Concordance
+asks whether proteins retain their expected ordering or profile shape. Dynamic range describes the
+spread of measured abundance within a declared feature universe and scale. Neither definition should
+be inferred from the other.
 
 ---
 
@@ -243,6 +269,9 @@ Verified against Crossref by DOI.
   biomarker studies. *EMBO Mol Med* 11:e10427. [10.15252/emmm.201910427](https://doi.org/10.15252/emmm.201910427)
 - Geyer PE *et al.* (2021). Plasma Proteomes Can Be Reidentifiable and Potentially Contain Personally
   Sensitive and Incidental Findings. *MCP* 20:100035. [10.1074/mcp.ra120.002359](https://doi.org/10.1074/mcp.ra120.002359)
+- Korff K *et al.* (2025). Pre-analytical drivers of bias in bead-enriched plasma proteomics.
+  *EMBO Mol Med* 17:3174–3196.
+  [10.1038/s44321-025-00309-0](https://doi.org/10.1038/s44321-025-00309-0)
 - Bielow C *et al.* (2024). Communicating Mass Spectrometry Quality Information in mzQC. *JASMS*
   35:1875–1882. [10.1021/jasms.4c00174](https://doi.org/10.1021/jasms.4c00174)
 - Bielow C, Mastrobuoni G, Kempa S (2015). Proteomics Quality Control. *JPR* 15:777–787.

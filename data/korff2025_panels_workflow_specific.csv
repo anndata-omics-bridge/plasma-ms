@@ -1,0 +1,451 @@
+workflow,cell_type,rank_in_panel,protein_name,gene_name,protein_ids,protein_id,median_intensity_cell_log10,cv_percent_cell,n_precursors,median_intensity_plasma_log10,ratio_cell_over_plasma
+Neat,platelet,1,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.65,2.31,56.0,4.6,11305.13
+Neat,platelet,2,Profilin-1,PFN1,P07737,P07737,8.35,9.17,22.0,4.3,11278.96
+Neat,platelet,3,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,8.23,5.06,22.0,,
+Neat,platelet,4,Talin-1,TLN1,Q9Y490,Q9Y490,8.15,1.51,226.0,,
+Neat,platelet,5,Thrombospondin-1,THBS1,P07996,P07996,8.14,0.58,82.0,4.55,3907.23
+Neat,platelet,6,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,8.11,2.89,220.0,3.74,23233.43
+Neat,platelet,7,Glyceraldehyde-3-phosphate dehydrogenase,GAPDH,P04406,P04406,7.99,5.81,30.0,4.21,6149.43
+Neat,platelet,8,Integrin alpha-IIb,ITGA2B,P08514,P08514,7.98,3.49,57.0,,
+Neat,platelet,9,14-3-3 protein zeta/delta,YWHAZ,P63104,P63104,7.95,4.49,26.0,3.75,15861.47
+Neat,platelet,10,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.93,3.38,59.0,,
+Neat,platelet,11,Myosin-9,MYH9,P35579,P35579,7.91,2.0,202.0,,
+Neat,platelet,12,Isoform 3 of Alpha-actinin-1,ACTN1,P12814-3,P12814-3,7.89,3.8,110.0,,
+Neat,platelet,13,Platelet basic protein,PPBP,P02775,P02775,7.89,9.27,14.0,4.65,1747.1
+Neat,platelet,14,Isoform Smooth muscle of Myosin light polypeptide 6,MYL6,P60660-2,P60660-2,7.88,5.53,18.0,,
+Neat,platelet,15,Ras-related protein Rap-1b,RAP1B,P61224,P61224,7.87,8.15,7.0,,
+Neat,platelet,16,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.85,8.62,11.0,,
+Neat,platelet,17,Platelet factor 4,PF4,P02776,P02776,7.82,3.46,6.0,4.31,3178.9
+Neat,platelet,18,Integrin beta-3,ITGB3,P05106,P05106,7.78,6.16,36.0,3.37,25565.51
+Neat,platelet,19,Beta-actin-like protein 2,ACTBL2,Q562R1,Q562R1,7.77,12.18,10.0,,
+Neat,platelet,20,Vinculin,VCL,P18206;P18206-2,P18206,7.77,3.96,108.0,3.93,6877.02
+Neat,platelet,21,Transgelin-2,TAGLN2,P37802;P37802-2,P37802,7.74,2.91,28.0,3.38,22916.88
+Neat,platelet,22,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.72,4.44,44.0,,
+Neat,platelet,23,Myosin regulatory light polypeptide 9,MYL9,P24844,P24844,7.7,4.92,18.0,,
+Neat,platelet,24,Isoform 2 of Tropomyosin alpha-3 chain,TPM3,P06753-2,P06753-2,7.68,6.61,17.0,,
+Neat,platelet,25,Isoform 2 of Platelet glycoprotein Ib beta chain,GP1BB,P13224-2,P13224-2,7.68,3.08,5.0,,
+Neat,platelet,26,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.66,4.89,24.0,,
+Neat,platelet,27,Pyruvate kinase PKM,PKM,P14618,P14618,7.6,4.8,62.0,3.86,5232.13
+Neat,platelet,28,Tubulin beta chain,TUBB,P07437,P07437,7.58,4.43,45.0,,
+Neat,platelet,29,Pleckstrin,PLEK,P08567,P08567,7.57,11.14,26.0,,
+Neat,platelet,30,Adenylyl cyclase-associated protein 1,CAP1,Q01518,Q01518,7.53,9.91,43.0,,
+Neat,erythrocyte,1,Hemoglobin subunit beta,HBB,P68871,P68871,10.73,12.26,46.0,6.41,20989.77
+Neat,erythrocyte,2,Hemoglobin subunit alpha,HBA1,P69905,P69905,10.67,6.25,26.0,6.12,35507.32
+Neat,erythrocyte,3,Hemoglobin subunit delta,HBD,P02042,P02042,9.76,5.02,22.0,4.95,64734.57
+Neat,erythrocyte,4,Hemoglobin subunit gamma-2,HBG2,P69892,P69892,9.46,18.18,28.0,4.66,63334.94
+Neat,erythrocyte,5,Carbonic anhydrase 1,CA1,P00915,P00915,9.3,8.85,32.0,4.41,77282.32
+Neat,erythrocyte,6,Band 3 anion transport protein,SLC4A1,P02730,P02730,8.98,16.89,42.0,3.81,150641.86
+Neat,erythrocyte,7,Catalase,CAT,P04040,P04040,8.94,6.62,36.0,4.19,56075.41
+Neat,erythrocyte,8,Peroxiredoxin-2,PRDX2,P32119,P32119,8.92,8.57,19.0,4.14,59653.79
+Neat,erythrocyte,9,Bisphosphoglycerate mutase,BPGM,P07738,P07738,8.82,12.39,17.0,,
+Neat,erythrocyte,10,Glyceraldehyde-3-phosphate dehydrogenase,GAPDH,P04406,P04406,8.69,15.18,16.0,4.19,31497.78
+Neat,erythrocyte,11,Carbonic anhydrase 2,CA2,P00918,P00918,8.65,14.18,22.0,4.39,18391.04
+Neat,erythrocyte,12,Hemoglobin subunit gamma-1,HBG1,P69891,P69891,8.61,5.29,4.0,3.64,94672.42
+Neat,erythrocyte,13,Superoxide dismutase [Cu-Zn],SOD1,P00441,P00441,8.57,8.49,4.0,,
+Neat,erythrocyte,14,Isoform 4 of Methanethiol oxidase,SELENBP1,Q13228-4,Q13228-4,8.56,13.73,34.0,4.23,21421.64
+Neat,erythrocyte,15,Peroxiredoxin-6,PRDX6,P30041,P30041,8.48,13.39,16.0,3.78,49947.69
+Neat,erythrocyte,16,Isoform Er5 of Ankyrin-1,ANK1,P16157-3,P16157-3,8.48,11.69,106.0,,
+Neat,erythrocyte,17,"Spectrin alpha chain, erythrocytic 1",SPTA1,P02549,P02549,8.45,10.73,160.0,5.14,2038.09
+Neat,erythrocyte,18,Isoform Long of Protein 4.2,EPB42,P16452-2,P16452-2,8.42,8.3,32.0,,
+Neat,erythrocyte,19,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,8.4,15.89,2.0,,
+Neat,erythrocyte,20,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.4,12.74,28.0,4.61,6110.79
+Neat,erythrocyte,21,Adenylate kinase isoenzyme 1,AK1,P00568,P00568,8.37,11.52,16.0,,
+Neat,erythrocyte,22,"Isoform 2 of Spectrin beta chain, erythrocytic",SPTB,P11277-2,P11277-2,8.35,14.28,150.0,4.91,2758.64
+Neat,erythrocyte,23,Peptidyl-prolyl cis-trans isomerase A,PPIA,P62937,P62937,8.33,7.99,13.0,3.6,54308.63
+Neat,erythrocyte,24,GTP-binding nuclear protein Ran,RAN,P62826,P62826,8.28,8.21,7.0,,
+Neat,erythrocyte,25,Fructose-bisphosphate aldolase A,ALDOA,P04075,P04075,8.22,15.19,21.0,4.2,10539.95
+Neat,erythrocyte,26,Dematin,DMTN,Q08495,Q08495,8.21,9.82,18.0,,
+Neat,erythrocyte,27,Triosephosphate isomerase,TPI1,P60174;P60174-3,P60174,8.2,11.37,17.0,3.45,56089.67
+Neat,erythrocyte,28,Isoform 2 of Tropomyosin alpha-3 chain,TPM3,P06753-2,P06753-2,8.18,11.9,7.0,,
+Neat,erythrocyte,29,Phosphoglycerate kinase 1,PGK1,P00558,P00558,8.17,8.02,25.0,,
+Neat,erythrocyte,30,Low molecular weight phosphotyrosine protein phosphatase,ACP1,P24666,P24666,8.17,11.73,4.0,,
+Neat,pbmc,1,Histone H4,H4C1,P62805,P62805,9.66,22.13,23.0,,
+Neat,pbmc,2,Histone H2A.Z,H2AZ1;H2AZ2,P0C0S5;Q71UI9,P0C0S5,9.17,26.83,7.0,,
+Neat,pbmc,3,Histone H2B type 1-B,H2BC3,P33778,P33778,8.91,24.97,13.0,,
+Neat,pbmc,4,Histone H2B type 1-M,H2BC14,Q99879,Q99879,8.11,19.87,4.0,,
+Neat,pbmc,5,Ras-related protein Rap-1b,RAP1B,P61224,P61224,7.79,32.44,7.0,,
+Neat,pbmc,6,Isoform 2 of Core histone macro-H2A.1,MACROH2A1,O75367-1;O75367-3,O75367-1,7.75,31.94,27.0,,
+Neat,pbmc,7,"ATP synthase subunit alpha, mitochondrial",ATP5F1A,P25705,P25705,7.68,24.32,35.0,,
+Neat,pbmc,8,ADP/ATP translocase 2,SLC25A5,P05141,P05141,7.66,34.44,20.0,,
+Neat,pbmc,9,Ras-related protein Rap-1A,RAP1A,P62834,P62834,7.64,26.69,16.0,,
+Neat,pbmc,10,Lamin-B1,LMNB1,P20700,P20700,7.57,34.79,48.0,,
+Neat,pbmc,11,"ATP synthase subunit beta, mitochondrial",ATP5F1B,P06576,P06576,7.52,26.4,42.0,,
+Neat,pbmc,12,"10 kDa heat shock protein, mitochondrial",HSPE1,P61604,P61604,7.45,33.98,6.0,4.32,1370.14
+Neat,pbmc,13,Voltage-dependent anion-selective channel protein 3,VDAC3,Q9Y277,Q9Y277,7.42,34.13,22.0,,
+Neat,pbmc,14,Prohibitin 1,PHB1,P35232,P35232,7.37,24.28,20.0,,
+Neat,pbmc,15,Voltage-dependent anion-selective channel protein 1,VDAC1,P21796,P21796,7.36,25.89,20.0,,
+Neat,pbmc,16,Cytochrome c oxidase subunit 6C,COX6C,P09669,P09669,7.35,31.04,3.0,,
+Neat,pbmc,17,"Malate dehydrogenase, mitochondrial",MDH2,P40926,P40926,7.3,26.8,26.0,,
+Neat,pbmc,18,"Cytochrome c oxidase subunit 4 isoform 1, mitochondrial",COX4I1,P13073,P13073,7.3,31.55,13.0,,
+Neat,pbmc,19,Histone H1.3,H1-3,P16402,P16402,7.29,11.33,6.0,,
+Neat,pbmc,20,Guanine nucleotide-binding protein G(i) subunit alpha-2,GNAI2,P04899,P04899,7.28,34.99,24.0,,
+Neat,pbmc,21,Ubiquitin-40S ribosomal protein S27a,RPS27A,P62979,P62979,7.22,34.92,7.0,,
+Neat,pbmc,22,"Cytochrome c oxidase subunit 7A2, mitochondrial",COX7A2,P14406,P14406,7.2,21.71,5.0,,
+Neat,pbmc,23,"Thioredoxin-dependent peroxide reductase, mitochondrial",PRDX3,P30048;P30048-2,P30048,7.18,21.19,9.0,,
+Neat,pbmc,24,Lysozyme C,LYZ,P61626,P61626,7.17,30.47,6.0,4.92,177.64
+Neat,pbmc,25,Adipocyte plasma membrane-associated protein,APMAP,Q9HDC9,Q9HDC9,7.14,26.83,22.0,4.79,223.36
+Neat,pbmc,26,Translocon-associated protein subunit alpha,SSR1,P43307,P43307,7.14,15.56,10.0,4.54,404.38
+Neat,pbmc,27,Endoplasmin,HSP90B1,P14625,P14625,7.14,33.28,46.0,4.25,779.31
+Neat,pbmc,28,Cytochrome c oxidase subunit NDUFA4,NDUFA4,O00483,O00483,7.14,31.13,4.0,,
+Neat,pbmc,29,"ATP synthase subunit O, mitochondrial",ATP5PO,P48047,P48047,7.13,26.6,9.0,,
+Neat,pbmc,30,"Isocitrate dehydrogenase [NADP], mitochondrial",IDH2,P48735,P48735,7.13,27.22,29.0,,
+PCA-N,platelet,1,Zyxin,ZYX,Q15942,Q15942,8.56,5.47,39.0,4.85,5171.74
+PCA-N,platelet,2,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.38,8.92,42.0,4.7,4787.44
+PCA-N,platelet,3,Histone H1.4,H1-4,P10412,P10412,8.15,9.52,6.0,4.99,1458.76
+PCA-N,platelet,4,SH3 domain-binding glutamic acid-rich-like protein 3,SH3BGRL3,Q9H299,Q9H299,8.15,9.8,12.0,4.28,7269.36
+PCA-N,platelet,5,Isoform 5 of Caldesmon,CALD1,Q05682-5,Q05682-5,8.13,11.93,38.0,4.55,3819.54
+PCA-N,platelet,6,Caveolae-associated protein 2,CAVIN2,O95810,O95810,8.06,6.76,29.0,4.94,1321.56
+PCA-N,platelet,7,Cysteine and glycine-rich protein 1,CSRP1,P21291,P21291,7.98,12.61,12.0,,
+PCA-N,platelet,8,Neurogranin,NRGN,Q92686,Q92686,7.96,7.15,5.0,4.26,5031.95
+PCA-N,platelet,9,Adapter SH3BGRL,SH3BGRL,O75368,O75368,7.89,8.83,14.0,4.65,1737.41
+PCA-N,platelet,10,Leucine-rich repeat-containing protein 59,LRRC59,Q96AG4,Q96AG4,7.88,8.67,10.0,,
+PCA-N,platelet,11,SH3 domain-binding glutamic acid-rich-like protein 2,SH3BGRL2,Q9UJC5,Q9UJC5,7.84,8.54,10.0,4.07,5790.42
+PCA-N,platelet,12,PDZ and LIM domain protein 7,PDLIM7,Q9NR12,Q9NR12,7.77,10.62,14.0,,
+PCA-N,platelet,13,Vesicle-associated membrane protein-associated protein A,VAPA,Q9P0L0,Q9P0L0,7.72,8.65,13.0,3.59,13548.67
+PCA-N,platelet,14,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.7,5.69,16.0,,
+PCA-N,platelet,15,Beta-actin-like protein 2,ACTBL2,Q562R1,Q562R1,7.59,16.48,4.0,3.61,9556.56
+PCA-N,platelet,16,Poly(rC)-binding protein 1,PCBP1,Q15365,Q15365,7.58,19.52,13.0,,
+PCA-N,platelet,17,Thrombospondin-1,THBS1,P07996,P07996,7.55,19.41,60.0,4.46,1223.99
+PCA-N,platelet,18,Platelet factor 4 variant,PF4V1,P10720,P10720,7.55,17.17,4.0,4.36,1566.5
+PCA-N,platelet,19,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.55,10.97,8.0,4.48,1144.43
+PCA-N,platelet,20,Nexilin,NEXN,Q0ZGT2,Q0ZGT2,7.54,6.62,34.0,,
+PCA-N,platelet,21,Calumenin,CALU,O43852;O43852-3,O43852,7.54,8.69,13.0,,
+PCA-N,platelet,22,WAS/WASL-interacting protein family member 1,WIPF1,O43516;O43516-3,O43516,7.51,16.22,19.0,,
+PCA-N,platelet,23,Vasodilator-stimulated phosphoprotein,VASP,P50552,P50552,7.5,8.09,30.0,3.78,5262.28
+PCA-N,platelet,24,Mesencephalic astrocyte-derived neurotrophic factor,MANF,P55145,P55145,7.47,11.19,16.0,4.08,2325.09
+PCA-N,platelet,25,Isoform 3 of Poly(rC)-binding protein 2,PCBP2,Q15366-3,Q15366-3,7.45,11.69,10.0,,
+PCA-N,platelet,26,Small ubiquitin-related modifier 2,SUMO2,P61956,P61956,7.44,9.42,2.0,3.92,3177.42
+PCA-N,platelet,27,PDZ and LIM domain protein 1,PDLIM1,O00151,O00151,7.43,8.87,22.0,,
+PCA-N,platelet,28,Histone H1.5,H1-5,P16401,P16401,7.41,14.69,6.0,4.28,1346.08
+PCA-N,platelet,29,Isoform FYB-130 of FYN-binding protein 1,FYB1,O15117-2,O15117-2,7.37,5.06,32.0,3.46,8079.42
+PCA-N,platelet,30,Ubiquitin-fold modifier 1,UFM1,P61960,P61960,7.36,6.94,6.0,,
+PCA-N,erythrocyte,1,Ubiquitin-40S ribosomal protein S27a,RPS27A,P62979,P62979,10.0,41.56,20.0,5.53,30217.05
+PCA-N,erythrocyte,2,Alpha-synuclein,SNCA,P37840;P37840-2,P37840,9.64,30.51,26.0,5.0,43480.48
+PCA-N,erythrocyte,3,Glutaredoxin-1,GLRX,P35754,P35754,9.33,35.29,14.0,,
+PCA-N,erythrocyte,4,Thioredoxin,TXN,P10599,P10599,9.28,42.97,21.0,4.97,20770.37
+PCA-N,erythrocyte,5,Gamma-glutamylcyclotransferase,GGCT,O75223,O75223,8.51,40.75,14.0,,
+PCA-N,erythrocyte,6,SH3 domain-binding glutamic acid-rich-like protein 3,SH3BGRL3,Q9H299,Q9H299,8.49,43.77,11.0,4.25,18192.4
+PCA-N,erythrocyte,7,Isoform 6 of Calpastatin,CAST,P20810-6,P20810-6,8.42,38.43,32.0,4.18,12303.96
+PCA-N,erythrocyte,8,2-iminobutanoate/2-iminopropanoate deaminase,RIDA,P52758,P52758,8.36,43.55,11.0,4.5,7521.97
+PCA-N,erythrocyte,9,SH3 domain-binding glutamic acid-rich-like protein 2,SH3BGRL2,Q9UJC5,Q9UJC5,8.25,40.69,10.0,,
+PCA-N,erythrocyte,10,28 kDa heat- and acid-stable phosphoprotein,PDAP1,Q13442,Q13442,7.88,43.93,8.0,,
+PCA-N,erythrocyte,11,Leucine-rich repeat-containing protein 20,LRRC20,Q8TCA0,Q8TCA0,7.83,43.89,10.0,,
+PCA-N,erythrocyte,12,Macrophage migration inhibitory factor,MIF,P14174,P14174,7.67,32.35,3.0,,
+PCA-N,erythrocyte,13,Calcium-regulated heat-stable protein 1,CARHSP1,Q9Y2V2,Q9Y2V2,7.62,42.75,4.0,,
+PCA-N,erythrocyte,14,Ubiquitin-fold modifier 1,UFM1,P61960,P61960,7.61,41.1,5.0,,
+PCA-N,erythrocyte,15,Alpha-endosulfine,ENSA,O43768;O43768-3,O43768,7.58,43.18,10.0,,
+PCA-N,erythrocyte,16,PEST proteolytic signal-containing nuclear protein,PCNP,Q8WW12,Q8WW12,7.56,42.34,13.0,,
+PCA-N,erythrocyte,17,NEDD8,NEDD8,Q15843,Q15843,7.55,44.23,2.0,,
+PCA-N,erythrocyte,18,D-dopachrome decarboxylase,DDT,P30046,P30046,7.51,32.64,2.0,,
+PCA-N,erythrocyte,19,Isoform 2 of CB1 cannabinoid receptor-interacting protein 1,CNRIP1,Q96F85-2,Q96F85-2,7.45,44.61,4.0,,
+PCA-N,erythrocyte,20,Ubiquilin-1,UBQLN1,Q9UMX0,Q9UMX0,7.43,44.22,4.0,,
+PCA-N,erythrocyte,21,Histone H1.5,H1-5,P16401,P16401,7.43,43.02,3.0,4.39,1103.3
+PCA-N,erythrocyte,22,Eukaryotic translation initiation factor 4E-binding protein 1,EIF4EBP1,Q13541,Q13541,7.41,29.21,6.0,,
+PCA-N,erythrocyte,23,Y-box-binding protein 3,YBX3,P16989,P16989,7.39,41.34,6.0,,
+PCA-N,erythrocyte,24,D-aminoacyl-tRNA deacylase 1,DTD1,Q8TEA8,Q8TEA8,7.36,43.74,6.0,,
+PCA-N,erythrocyte,25,Protein CDV3 homolog,CDV3,Q9UKY7,Q9UKY7,7.33,30.92,6.0,,
+PCA-N,erythrocyte,26,Stathmin,STMN1,P16949,P16949,7.32,31.98,6.0,,
+PCA-N,erythrocyte,27,Eukaryotic translation initiation factor 3 subunit B,EIF3B,P55884;P55884-2,P55884,7.32,43.97,2.0,,
+PCA-N,erythrocyte,28,Phosphoglycerate kinase 1,PGK1,P00558,P00558,7.27,37.43,12.0,,
+PCA-N,erythrocyte,29,Zinc finger protein 428,ZNF428,Q96B54,Q96B54,7.24,42.81,4.0,,
+PCA-N,erythrocyte,30,Cofilin-1,CFL1,P23528,P23528,7.24,25.32,7.0,,
+PCA-N,pbmc,1,Platelet basic protein,PPBP,P02775,P02775,8.72,43.74,21.0,6.52,154.05
+PCA-N,pbmc,2,Hemoglobin subunit beta,HBB,P68871,P68871,8.22,23.68,22.0,5.6,424.43
+PCA-N,pbmc,3,Activated RNA polymerase II transcriptional coactivator p15,SUB1,P53999,P53999,8.11,49.6,12.0,,
+PCA-N,pbmc,4,SH3 domain-binding glutamic acid-rich-like protein 3,SH3BGRL3,Q9H299,Q9H299,7.95,48.73,13.0,4.24,5473.39
+PCA-N,pbmc,5,Glyceraldehyde-3-phosphate dehydrogenase,GAPDH,P04406,P04406,7.78,38.24,24.0,4.93,731.76
+PCA-N,pbmc,6,Isoform 3 of Poly(rC)-binding protein 2,PCBP2,Q15366-3,Q15366-3,7.39,45.88,10.0,,
+PCA-N,pbmc,7,SH3 domain-binding glutamic acid-rich-like protein 2,SH3BGRL2,Q9UJC5,Q9UJC5,7.36,48.67,10.0,,
+PCA-N,pbmc,8,Poly(rC)-binding protein 1,PCBP1,Q15365,Q15365,7.34,47.34,12.0,,
+PCA-N,pbmc,9,Latent-transforming growth factor beta-binding protein 1,LTBP1,Q14766,Q14766,7.3,47.09,37.0,4.8,334.67
+PCA-N,pbmc,10,Talin-1,TLN1,Q9Y490,Q9Y490,7.22,38.87,107.0,3.87,2325.41
+PCA-N,pbmc,11,RNA-binding protein 14,RBM14,Q96PK6,Q96PK6,7.11,34.43,13.0,,
+PCA-N,pbmc,12,Ribonuclease T2,RNASET2,O00584,O00584,7.11,49.19,8.0,4.83,200.07
+PCA-N,pbmc,13,Transmembrane protein 40,TMEM40,Q8WWA1;Q8WWA1-2,Q8WWA1,7.1,45.97,6.0,,
+PCA-N,pbmc,14,Plastin-2,LCP1,P13796,P13796,7.07,7.27,32.0,,
+PCA-N,pbmc,15,Superoxide dismutase [Cu-Zn],SOD1,P00441,P00441,7.06,43.74,6.0,4.8,191.96
+PCA-N,pbmc,16,Fatty acid-binding protein 5,FABP5,Q01469,Q01469,7.05,48.55,12.0,4.68,252.05
+PCA-N,pbmc,17,Profilin-1,PFN1,P07737,P07737,7.05,2.21,12.0,,
+PCA-N,pbmc,18,Thrombospondin-1,THBS1,P07996,P07996,7.02,7.21,35.0,4.83,154.8
+PCA-N,pbmc,19,Tubulin beta chain,TUBB,P07437,P07437,6.97,43.63,22.0,,
+PCA-N,pbmc,20,Protein canopy homolog 3,CNPY3,Q9BT09,Q9BT09,6.96,46.49,7.0,,
+PCA-N,pbmc,21,"Complement component 1 Q subcomponent-binding protein, mitochondrial",C1QBP,Q07021,Q07021,6.9,36.47,8.0,,
+PCA-N,pbmc,22,Vimentin,VIM,P08670,P08670,6.8,7.14,31.0,,
+PCA-N,pbmc,23,Rho GTPase-activating protein 15,ARHGAP15,Q53QZ3,Q53QZ3,6.77,48.13,3.0,,
+PCA-N,pbmc,24,Pyruvate kinase PKM,PKM,P14618,P14618,6.76,8.15,23.0,4.34,217.63
+PCA-N,pbmc,25,Protein CDV3 homolog,CDV3,Q9UKY7,Q9UKY7,6.75,46.96,9.0,,
+PCA-N,pbmc,26,Myosin-9,MYH9,P35579,P35579,6.71,20.6,80.0,,
+PCA-N,pbmc,27,Jupiter microtubule associated homolog 1,JPT1,Q9UK76,Q9UK76,6.7,27.68,4.0,,
+PCA-N,pbmc,28,Proteasome activator complex subunit 1,PSME1,Q06323,Q06323,6.69,38.84,10.0,,
+PCA-N,pbmc,29,DNA topoisomerase 1,TOP1,P11387,P11387,6.68,40.8,5.0,,
+PCA-N,pbmc,30,Phosphoglycerate kinase 1,PGK1,P00558,P00558,6.61,30.83,8.0,,
+SAX,platelet,1,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.71,1.87,69.0,5.31,2511.48
+SAX,platelet,2,Integrin alpha-IIb,ITGA2B,P08514,P08514,8.16,0.44,58.0,4.78,2427.05
+SAX,platelet,3,Ras-related protein Rap-1b,RAP1B,P61224,P61224,8.09,7.07,7.0,4.56,3347.8
+SAX,platelet,4,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,8.06,3.15,16.0,4.43,4220.73
+SAX,platelet,5,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,7.98,12.57,18.0,4.64,2142.16
+SAX,platelet,6,Talin-1,TLN1,Q9Y490,Q9Y490,7.94,1.81,200.0,4.67,1867.76
+SAX,platelet,7,14-3-3 protein zeta/delta,YWHAZ,P63104,P63104,7.94,6.49,25.0,4.86,1186.2
+SAX,platelet,8,Isoform 2 of Platelet glycoprotein Ib beta chain,GP1BB,P13224-2,P13224-2,7.93,2.85,5.0,4.65,1910.32
+SAX,platelet,9,Beta-actin-like protein 2,ACTBL2,Q562R1,Q562R1,7.93,16.03,8.0,,
+SAX,platelet,10,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,7.93,0.98,198.0,4.64,1919.71
+SAX,platelet,11,Integrin beta-3,ITGB3,P05106,P05106,7.88,4.62,34.0,4.56,2115.7
+SAX,platelet,12,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.83,3.74,19.0,4.0,6714.57
+SAX,platelet,13,Ras-related protein Rab-8A,RAB8A,P61006,P61006,7.82,5.21,14.0,4.66,1447.01
+SAX,platelet,14,Platelet factor 4,PF4,P02776,P02776,7.81,19.23,6.0,4.61,1588.48
+SAX,platelet,15,Ras-related protein Rap-1A,RAP1A,P62834,P62834,7.8,5.06,18.0,4.64,1459.97
+SAX,platelet,16,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.8,5.41,55.0,4.49,2033.41
+SAX,platelet,17,Profilin-1,PFN1,P07737,P07737,7.8,4.42,17.0,4.77,1056.44
+SAX,platelet,18,Tubulin beta chain,TUBB,P07437,P07437,7.79,3.81,44.0,4.39,2506.35
+SAX,platelet,19,Isoform Smooth muscle of Myosin light polypeptide 6,MYL6,P60660-2,P60660-2,7.73,2.61,18.0,4.3,2640.17
+SAX,platelet,20,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.72,4.5,48.0,4.34,2394.03
+SAX,platelet,21,Myosin-9,MYH9,P35579,P35579,7.69,2.25,188.0,4.4,1932.0
+SAX,platelet,22,Histone H4,H4C1,P62805,P62805,7.69,8.02,11.0,4.67,1024.73
+SAX,platelet,23,Tubulin beta-1 chain,TUBB1,Q9H4B7,Q9H4B7,7.59,6.0,48.0,3.95,4343.48
+SAX,platelet,24,Filamin-C,FLNC,Q14315;Q14315-2,Q14315,7.55,13.74,2.0,3.99,3447.44
+SAX,platelet,25,Isoform 3 of Beta-parvin,PARVB,Q9HBI1-3,Q9HBI1-3,7.55,5.74,32.0,4.19,2303.36
+SAX,platelet,26,Pyruvate kinase PKM,PKM,P14618,P14618,7.53,2.91,59.0,4.26,1855.03
+SAX,platelet,27,WD repeat-containing protein 1,WDR1,O75083,O75083,7.51,2.2,28.0,4.08,2680.4
+SAX,platelet,28,Myosin regulatory light polypeptide 9,MYL9,P24844,P24844,7.49,9.15,17.0,4.17,2103.85
+SAX,platelet,29,Isoform 3 of Alpha-actinin-1,ACTN1,P12814-3,P12814-3,7.49,3.98,96.0,4.31,1500.94
+SAX,platelet,30,Vinculin,VCL,P18206;P18206-2,P18206,7.45,3.32,83.0,4.36,1223.65
+SAX,erythrocyte,1,Hemoglobin subunit beta,HBB,P68871,P68871,10.06,37.0,36.0,6.04,10443.09
+SAX,erythrocyte,2,Hemoglobin subunit alpha,HBA1,P69905,P69905,9.87,36.26,21.0,5.98,7739.48
+SAX,erythrocyte,3,Band 3 anion transport protein,SLC4A1,P02730,P02730,9.84,37.76,60.0,5.21,43152.04
+SAX,erythrocyte,4,Isoform Er5 of Ankyrin-1,ANK1,P16157-3,P16157-3,9.18,35.91,169.0,4.36,65402.4
+SAX,erythrocyte,5,"Isoform 2 of Spectrin beta chain, erythrocytic",SPTB,P11277-2,P11277-2,9.13,35.78,244.0,4.4,54135.96
+SAX,erythrocyte,6,"Spectrin alpha chain, erythrocytic 1",SPTA1,P02549,P02549,9.07,36.3,253.0,4.34,53955.05
+SAX,erythrocyte,7,Transitional endoplasmic reticulum ATPase,VCP,P55072,P55072,8.85,36.36,90.0,4.41,28069.29
+SAX,erythrocyte,8,Protein 4.1,EPB41,P11171,P11171,8.7,36.99,70.0,4.09,40133.67
+SAX,erythrocyte,9,Glycophorin-A,GYPA,P02724;P02724-2;P02724-3,P02724,8.66,34.8,6.0,4.12,34492.75
+SAX,erythrocyte,10,26S proteasome regulatory subunit 7,PSMC2,P35998,P35998,8.57,37.85,48.0,4.02,35651.09
+SAX,erythrocyte,11,Proteasome subunit beta type-1,PSMB1,P20618,P20618,8.5,36.59,15.0,5.13,2333.48
+SAX,erythrocyte,12,Calmodulin-1,CALM1;CALM2;CALM3,P0DP23;P0DP24;P0DP25,P0DP23,8.48,37.62,13.0,5.01,2966.73
+SAX,erythrocyte,13,26S proteasome regulatory subunit 6B,PSMC4,P43686,P43686,8.32,37.0,32.0,3.44,76770.29
+SAX,erythrocyte,14,Proteasome subunit beta type-3,PSMB3,P49720,P49720,8.28,36.07,15.0,5.02,1797.14
+SAX,erythrocyte,15,Microtubule-associated protein RP/EB family member 1,MAPRE1,Q15691,Q15691,8.13,37.14,18.0,4.3,6558.37
+SAX,erythrocyte,16,Nucleosome assembly protein 1-like 4,NAP1L4,Q99733;Q99733-2,Q99733,8.08,37.9,19.0,4.05,10761.72
+SAX,erythrocyte,17,Eukaryotic translation initiation factor 5,EIF5,P55010,P55010,7.99,37.41,25.0,3.99,9888.65
+SAX,erythrocyte,18,Isoform 8 of Tropomyosin alpha-1 chain,TPM1,P09493-8,P09493-8,7.95,37.92,8.0,4.18,5913.68
+SAX,erythrocyte,19,Proteasome subunit beta type-5,PSMB5,P28074,P28074,7.94,36.79,20.0,4.41,3411.03
+SAX,erythrocyte,20,Glycophorin-C,GYPC,P04921;P04921-2;P04921-3,P04921,7.87,36.43,3.0,,
+SAX,erythrocyte,21,COP9 signalosome complex subunit 3,COPS3,Q9UNS2,Q9UNS2,7.8,37.89,33.0,,
+SAX,erythrocyte,22,Erythroid membrane-associated protein,ERMAP,Q96PL5,Q96PL5,7.8,37.47,18.0,,
+SAX,erythrocyte,23,Methylosome protein 50,WDR77,Q9BQA1,Q9BQA1,7.79,37.7,14.0,3.33,28766.36
+SAX,erythrocyte,24,Eukaryotic translation initiation factor 3 subunit J,EIF3J,O75822,O75822,7.78,33.13,20.0,4.67,1265.6
+SAX,erythrocyte,25,Peroxiredoxin-6,PRDX6,P30041,P30041,7.77,37.7,16.0,4.58,1552.67
+SAX,erythrocyte,26,Tropomodulin-1,TMOD1,P28289,P28289,7.64,37.25,34.0,3.39,17766.95
+SAX,erythrocyte,27,Eukaryotic translation initiation factor 2 subunit 2,EIF2S2,P20042,P20042,7.63,36.66,18.0,,
+SAX,erythrocyte,28,WD repeat-containing protein 91,WDR91,A4D1P6,A4D1P6,7.6,37.85,36.0,,
+SAX,erythrocyte,29,Nucleoside diphosphate kinase A,NME1,P15531;P15531-2,P15531,7.57,37.16,12.0,4.39,1538.62
+SAX,erythrocyte,30,Isoform 6 of Calpastatin,CAST,P20810-6,P20810-6,7.57,37.88,24.0,4.25,2057.75
+SAX,pbmc,1,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.88,9.18,64.0,5.5,2400.44
+SAX,pbmc,2,14-3-3 protein zeta/delta,YWHAZ,P63104,P63104,8.26,12.07,26.0,5.21,1109.0
+SAX,pbmc,3,Myosin-9,MYH9,P35579,P35579,8.22,7.92,216.0,4.47,5557.57
+SAX,pbmc,4,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,8.21,7.59,19.0,4.65,3655.31
+SAX,pbmc,5,Isoform Smooth muscle of Myosin light polypeptide 6,MYL6,P60660-2,P60660-2,8.2,11.82,19.0,4.24,9141.4
+SAX,pbmc,6,Integrin alpha-IIb,ITGA2B,P08514,P08514,8.19,6.03,59.0,4.89,2005.35
+SAX,pbmc,7,Tubulin beta chain,TUBB,P07437,P07437,7.93,8.85,45.0,4.5,2653.69
+SAX,pbmc,8,Integrin beta-3,ITGB3,P05106,P05106,7.92,9.73,32.0,4.67,1771.82
+SAX,pbmc,9,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.91,5.73,12.0,4.71,1602.44
+SAX,pbmc,10,Heat shock protein HSP 90-beta,HSP90AB1,P08238,P08238,7.89,11.23,34.0,4.88,1024.88
+SAX,pbmc,11,Beta-actin-like protein 2,ACTBL2,Q562R1,Q562R1,7.88,14.12,8.0,4.53,2236.67
+SAX,pbmc,12,Isoform 2 of Platelet glycoprotein Ib beta chain,GP1BB,P13224-2,P13224-2,7.86,12.5,5.0,4.68,1525.11
+SAX,pbmc,13,Vimentin,VIM,P08670,P08670,7.86,11.23,41.0,4.38,2999.99
+SAX,pbmc,14,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.76,3.98,42.0,4.43,2161.02
+SAX,pbmc,15,Myosin regulatory light polypeptide 9,MYL9,P24844,P24844,7.75,8.62,17.0,4.07,4776.74
+SAX,pbmc,16,Calmodulin-1,CALM1;CALM2;CALM3,P0DP23;P0DP24;P0DP25,P0DP23,7.74,15.92,14.0,4.73,1032.64
+SAX,pbmc,17,Ras-related protein Rap-1b,RAP1B,P61224,P61224,7.74,8.71,6.0,4.69,1127.47
+SAX,pbmc,18,Myosin regulatory light chain 12A,MYL12A,P19105,P19105,7.73,4.92,6.0,3.9,6864.05
+SAX,pbmc,19,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,7.73,9.27,172.0,4.67,1152.98
+SAX,pbmc,20,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.66,6.82,19.0,4.12,3476.37
+SAX,pbmc,21,Ras-related protein Rab-8A,RAB8A,P61006,P61006,7.62,13.62,12.0,4.6,1044.55
+SAX,pbmc,22,ADP/ATP translocase 2,SLC25A5,P05141,P05141,7.6,14.18,18.0,3.95,4463.26
+SAX,pbmc,23,Activated RNA polymerase II transcriptional coactivator p15,SUB1,P53999,P53999,7.58,4.82,10.0,,
+SAX,pbmc,24,Tubulin beta-1 chain,TUBB1,Q9H4B7,Q9H4B7,7.58,7.7,42.0,4.01,3732.2
+SAX,pbmc,25,Pyruvate kinase PKM,PKM,P14618,P14618,7.55,5.88,60.0,4.48,1170.08
+SAX,pbmc,26,Isoform 2 of Tropomyosin alpha-3 chain,TPM3,P06753-2,P06753-2,7.53,5.67,10.0,4.22,2057.12
+SAX,pbmc,27,High mobility group protein B1,HMGB1,P09429,P09429,7.52,8.71,16.0,,
+SAX,pbmc,28,GTP-binding nuclear protein Ran,RAN,P62826,P62826,7.51,14.14,12.0,4.33,1495.12
+SAX,pbmc,29,Voltage-dependent anion-selective channel protein 3,VDAC3,Q9Y277,Q9Y277,7.5,14.27,22.0,3.81,4899.82
+SAX,pbmc,30,60S acidic ribosomal protein P2,RPLP2,P05387,P05387,7.49,14.6,6.0,4.27,1656.45
+Sera Sil 700,platelet,1,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.6,7.64,62.0,5.32,1812.99
+Sera Sil 700,platelet,2,Integrin alpha-IIb,ITGA2B,P08514,P08514,8.08,3.54,53.0,4.61,2903.68
+Sera Sil 700,platelet,3,Talin-1,TLN1,Q9Y490,Q9Y490,8.05,8.26,205.0,4.58,2930.12
+Sera Sil 700,platelet,4,Ras-related protein Rap-1b,RAP1B,P61224,P61224,7.91,5.59,6.0,4.5,2556.57
+Sera Sil 700,platelet,5,Beta-actin-like protein 2,ACTBL2,Q562R1,Q562R1,7.91,19.43,7.0,3.79,11450.73
+Sera Sil 700,platelet,6,Myosin-9,MYH9,P35579,P35579,7.91,2.75,201.0,4.21,4986.94
+Sera Sil 700,platelet,7,14-3-3 protein zeta/delta,YWHAZ,P63104,P63104,7.9,11.11,24.0,4.54,2266.8
+Sera Sil 700,platelet,8,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,7.88,7.84,18.0,4.6,1919.81
+Sera Sil 700,platelet,9,Isoform 3 of Alpha-actinin-1,ACTN1,P12814-3,P12814-3,7.87,5.93,109.0,4.33,3495.66
+Sera Sil 700,platelet,10,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,7.86,3.97,208.0,4.48,2397.08
+Sera Sil 700,platelet,11,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.86,5.84,13.0,4.23,4265.23
+Sera Sil 700,platelet,12,Myosin regulatory light polypeptide 9,MYL9,P24844,P24844,7.82,4.03,17.0,4.12,4835.29
+Sera Sil 700,platelet,13,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.81,11.4,54.0,4.51,1960.3
+Sera Sil 700,platelet,14,Integrin beta-3,ITGB3,P05106,P05106,7.77,3.55,31.0,4.47,2009.92
+Sera Sil 700,platelet,15,Isoform 2 of Platelet glycoprotein Ib beta chain,GP1BB,P13224-2,P13224-2,7.75,3.99,5.0,4.27,2959.59
+Sera Sil 700,platelet,16,Ras-related protein Rab-8A,RAB8A,P61006,P61006,7.7,7.18,12.0,4.52,1521.57
+Sera Sil 700,platelet,17,Tubulin beta chain,TUBB,P07437,P07437,7.69,8.09,41.0,3.99,5003.47
+Sera Sil 700,platelet,18,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.68,7.93,18.0,3.94,5382.46
+Sera Sil 700,platelet,19,Profilin-1,PFN1,P07737,P07737,7.61,19.21,16.0,4.51,1278.24
+Sera Sil 700,platelet,20,Myosin regulatory light chain 12A,MYL12A,P19105,P19105,7.6,8.54,7.0,3.86,5533.03
+Sera Sil 700,platelet,21,Ras-related protein Rab-15,RAB15,P59190,P59190,7.6,7.14,2.0,4.45,1418.12
+Sera Sil 700,platelet,22,WD repeat-containing protein 1,WDR1,O75083,O75083,7.56,8.84,26.0,4.07,3087.69
+Sera Sil 700,platelet,23,Vinculin,VCL,P18206;P18206-2,P18206,7.56,10.11,92.0,4.35,1630.65
+Sera Sil 700,platelet,24,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.51,7.53,44.0,4.11,2486.03
+Sera Sil 700,platelet,25,Tubulin beta-1 chain,TUBB1,Q9H4B7,Q9H4B7,7.5,7.93,43.0,4.0,2791.02
+Sera Sil 700,platelet,26,Isoform 3 of Beta-parvin,PARVB,Q9HBI1-3,Q9HBI1-3,7.49,3.02,32.0,4.07,2645.4
+Sera Sil 700,platelet,27,Thymosin beta-4,TMSB4X,P62328,P62328,7.42,19.69,7.0,,
+Sera Sil 700,platelet,28,Histone H4,H4C1,P62805,P62805,7.4,5.32,9.0,4.37,1053.66
+Sera Sil 700,platelet,29,Zyxin,ZYX,Q15942,Q15942,7.35,6.66,35.0,4.0,2242.77
+Sera Sil 700,platelet,30,Isoform 8 of Tropomyosin alpha-1 chain,TPM1,P09493-8,P09493-8,7.28,5.8,10.0,3.88,2413.2
+Sera Sil 700,erythrocyte,1,Hemoglobin subunit beta,HBB,P68871,P68871,10.04,4.2,42.0,6.83,1633.18
+Sera Sil 700,erythrocyte,2,Hemoglobin subunit alpha,HBA1,P69905,P69905,9.91,3.27,23.0,6.63,1917.86
+Sera Sil 700,erythrocyte,3,Band 3 anion transport protein,SLC4A1,P02730,P02730,9.66,3.58,70.0,5.86,6218.09
+Sera Sil 700,erythrocyte,4,Carbonic anhydrase 1,CA1,P00915,P00915,9.16,5.27,32.0,4.53,42891.72
+Sera Sil 700,erythrocyte,5,"Isoform 2 of Spectrin beta chain, erythrocytic",SPTB,P11277-2,P11277-2,9.03,2.27,247.0,5.18,7158.33
+Sera Sil 700,erythrocyte,6,Isoform Er5 of Ankyrin-1,ANK1,P16157-3,P16157-3,8.99,1.26,169.0,5.01,9535.23
+Sera Sil 700,erythrocyte,7,"Spectrin alpha chain, erythrocytic 1",SPTA1,P02549,P02549,8.96,0.79,256.0,5.02,8711.7
+Sera Sil 700,erythrocyte,8,Isoform Long of Protein 4.2,EPB42,P16452-2,P16452-2,8.93,4.7,54.0,4.81,13030.53
+Sera Sil 700,erythrocyte,9,Hemoglobin subunit delta,HBD,P02042,P02042,8.9,10.64,16.0,5.27,4257.66
+Sera Sil 700,erythrocyte,10,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.88,4.05,40.0,5.83,1129.45
+Sera Sil 700,erythrocyte,11,GTP-binding nuclear protein Ran,RAN,P62826,P62826,8.84,5.38,16.0,4.18,45156.93
+Sera Sil 700,erythrocyte,12,Protein 4.1,EPB41,P11171,P11171,8.82,4.43,76.0,4.87,8838.5
+Sera Sil 700,erythrocyte,13,"Solute carrier family 2, facilitated glucose transporter member 1",SLC2A1,P11166,P11166,8.78,4.88,16.0,5.09,4878.93
+Sera Sil 700,erythrocyte,14,Glycophorin-A,GYPA,P02724;P02724-2;P02724-3,P02724,8.69,14.88,4.0,4.97,5287.28
+Sera Sil 700,erythrocyte,15,Peroxiredoxin-2,PRDX2,P32119,P32119,8.68,9.44,18.0,5.33,2230.27
+Sera Sil 700,erythrocyte,16,Flavin reductase (NADPH),BLVRB,P30043,P30043,8.66,3.58,22.0,4.11,36061.63
+Sera Sil 700,erythrocyte,17,Carbonic anhydrase 2,CA2,P00918,P00918,8.65,11.04,26.0,4.03,41084.61
+Sera Sil 700,erythrocyte,18,Glyceraldehyde-3-phosphate dehydrogenase,GAPDH,P04406,P04406,8.63,3.2,25.0,5.33,2010.87
+Sera Sil 700,erythrocyte,19,Dematin,DMTN,Q08495,Q08495,8.61,3.87,31.0,4.55,11518.14
+Sera Sil 700,erythrocyte,20,Ammonium transporter Rh type A,RHAG,Q02094,Q02094,8.6,6.89,2.0,4.67,8531.79
+Sera Sil 700,erythrocyte,21,Isoform 2 of Tropomyosin alpha-3 chain,TPM3,P06753-2,P06753-2,8.59,0.97,11.0,4.83,5779.84
+Sera Sil 700,erythrocyte,22,55 kDa erythrocyte membrane protein,MPP1,Q00013,Q00013,8.55,2.71,34.0,4.46,12168.85
+Sera Sil 700,erythrocyte,23,Hemoglobin subunit gamma-2,HBG2,P69892,P69892,8.53,8.52,20.0,5.19,2191.2
+Sera Sil 700,erythrocyte,24,Stomatin,STOM,P27105,P27105,8.48,4.76,32.0,4.98,3136.01
+Sera Sil 700,erythrocyte,25,Catalase,CAT,P04040,P04040,8.42,2.23,42.0,5.31,1292.99
+Sera Sil 700,erythrocyte,26,Isoform 8 of Tropomyosin alpha-1 chain,TPM1,P09493-8,P09493-8,8.42,6.01,11.0,4.51,8000.89
+Sera Sil 700,erythrocyte,27,Delta-aminolevulinic acid dehydratase,ALAD,P13716,P13716,8.39,5.97,22.0,4.3,12133.71
+Sera Sil 700,erythrocyte,28,Ras-related protein Rab-8A,RAB8A,P61006,P61006,8.38,4.86,11.0,5.07,2045.62
+Sera Sil 700,erythrocyte,29,Hsc70-interacting protein,ST13,P50502,P50502,8.37,7.25,14.0,4.45,8224.76
+Sera Sil 700,erythrocyte,30,Beta-adducin,ADD2,P35612,P35612,8.34,3.33,68.0,4.31,10672.16
+Sera Sil 700,pbmc,1,Hemoglobin subunit beta,HBB,P68871,P68871,8.51,31.87,28.0,6.12,248.98
+Sera Sil 700,pbmc,2,Hemoglobin subunit alpha,HBA1,P69905,P69905,8.23,29.73,18.0,5.93,197.44
+Sera Sil 700,pbmc,3,Isoform Smooth muscle of Myosin light polypeptide 6,MYL6,P60660-2,P60660-2,8.2,33.6,19.0,3.48,52572.71
+Sera Sil 700,pbmc,4,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.97,26.15,12.0,3.99,9734.06
+Sera Sil 700,pbmc,5,LIM and senescent cell antigen-like-containing domain protein 1,LIMS1,P48059,P48059,7.92,32.49,21.0,,
+Sera Sil 700,pbmc,6,Vimentin,VIM,P08670,P08670,7.77,33.53,42.0,4.09,4805.86
+Sera Sil 700,pbmc,7,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.67,33.42,38.0,4.43,1737.35
+Sera Sil 700,pbmc,8,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.64,33.39,50.0,4.05,4019.81
+Sera Sil 700,pbmc,9,Ras-related protein Rab-15,RAB15,P59190,P59190,7.55,32.56,2.0,4.11,2735.18
+Sera Sil 700,pbmc,10,14-3-3 protein zeta/delta,YWHAZ,P63104,P63104,7.52,34.31,22.0,4.36,1460.49
+Sera Sil 700,pbmc,11,Isoform 2 of Heat shock protein HSP 90-alpha,HSP90AA1,P07900-2,P07900-2,7.52,30.09,48.0,4.55,930.13
+Sera Sil 700,pbmc,12,"ATP synthase subunit alpha, mitochondrial",ATP5F1A,P25705,P25705,7.51,33.79,32.0,,
+Sera Sil 700,pbmc,13,Ras-related protein Rap-1A,RAP1A,P62834,P62834,7.42,25.19,17.0,4.06,2182.47
+Sera Sil 700,pbmc,14,Tropomyosin alpha-4 chain,TPM4,P67936,P67936,7.35,34.99,14.0,3.86,3199.29
+Sera Sil 700,pbmc,15,Profilin-1,PFN1,P07737,P07737,7.26,33.82,15.0,4.16,1289.01
+Sera Sil 700,pbmc,16,Elongation factor 1-alpha 1,EEF1A1,P68104,P68104,7.26,31.54,34.0,4.23,1096.73
+Sera Sil 700,pbmc,17,60S ribosomal protein L22,RPL22,P35268,P35268,7.26,30.32,7.0,,
+Sera Sil 700,pbmc,18,Adenine phosphoribosyltransferase,APRT,P07741,P07741,7.21,33.0,12.0,,
+Sera Sil 700,pbmc,19,60S ribosomal protein L18,RPL18,Q07020;Q07020-2,Q07020,7.19,27.87,3.0,,
+Sera Sil 700,pbmc,20,"ATP synthase subunit beta, mitochondrial",ATP5F1B,P06576,P06576,7.16,34.08,44.0,3.88,1939.62
+Sera Sil 700,pbmc,21,"Thioredoxin-dependent peroxide reductase, mitochondrial",PRDX3,P30048;P30048-2,P30048,7.11,31.38,9.0,,
+Sera Sil 700,pbmc,22,Calreticulin,CALR,P27797,P27797,7.1,34.05,22.0,4.72,232.73
+Sera Sil 700,pbmc,23,Flavin reductase (NADPH),BLVRB,P30043,P30043,7.05,32.87,16.0,3.75,2010.66
+Sera Sil 700,pbmc,24,Isoform 6 of Myosin-14,MYH14,Q7Z406-6,Q7Z406-6,7.05,23.84,4.0,,
+Sera Sil 700,pbmc,25,Protein disulfide-isomerase,P4HB,P07237,P07237,7.04,25.15,26.0,4.98,115.25
+Sera Sil 700,pbmc,26,Glutathione peroxidase 1,GPX1,P07203,P07203,7.04,32.08,19.0,3.71,2193.96
+Sera Sil 700,pbmc,27,"Malate dehydrogenase, mitochondrial",MDH2,P40926,P40926,7.02,34.64,23.0,,
+Sera Sil 700,pbmc,28,Cytochrome c oxidase subunit 6C,COX6C,P09669,P09669,7.02,32.52,2.0,,
+Sera Sil 700,pbmc,29,Plastin-2,LCP1,P13796,P13796,7.01,33.98,48.0,4.92,126.01
+Sera Sil 700,pbmc,30,Tubulin alpha-8 chain,TUBA8,Q9NY65,Q9NY65,6.99,33.25,14.0,,
+Non-magnetic,platelet,1,Integrin alpha-IIb,ITGA2B,P08514,P08514,8.61,4.75,70.0,4.65,8970.18
+Non-magnetic,platelet,2,"Actin, cytoplasmic 1",ACTB,P60709,P60709,8.45,9.99,60.0,4.78,4676.21
+Non-magnetic,platelet,3,Integrin beta-3,ITGB3,P05106,P05106,8.45,3.06,50.0,4.42,10610.02
+Non-magnetic,platelet,4,Histone H4,H4C1,P62805,P62805,8.4,18.52,19.0,5.08,2109.53
+Non-magnetic,platelet,5,Isoform 2 of Platelet glycoprotein Ib beta chain,GP1BB,P13224-2,P13224-2,8.35,5.2,5.0,4.3,11374.15
+Non-magnetic,platelet,6,Ras-related protein Rap-1b,RAP1B,P61224,P61224,8.2,4.88,6.0,4.12,11868.56
+Non-magnetic,platelet,7,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,8.12,1.7,209.0,4.47,4431.07
+Non-magnetic,platelet,8,Ras-related protein Rab-15,RAB15,P59190,P59190,8.07,4.93,2.0,,
+Non-magnetic,platelet,9,Platelet glycoprotein Ib alpha chain,GP1BA,P07359,P07359,8.04,3.3,22.0,4.17,7423.59
+Non-magnetic,platelet,10,Talin-1,TLN1,Q9Y490,Q9Y490,7.99,6.6,214.0,4.22,5771.56
+Non-magnetic,platelet,11,Profilin-1,PFN1,P07737,P07737,7.98,6.57,20.0,4.59,2418.11
+Non-magnetic,platelet,12,Ras-related protein Rab-8A,RAB8A,P61006,P61006,7.96,4.85,14.0,4.31,4509.23
+Non-magnetic,platelet,13,Histone H1.4,H1-4,P10412,P10412,7.92,8.6,7.0,4.37,3501.86
+Non-magnetic,platelet,14,Myosin-9,MYH9,P35579,P35579,7.91,11.08,206.0,4.02,7817.18
+Non-magnetic,platelet,15,NADH-cytochrome b5 reductase 3,CYB5R3,P00387;P00387-2;P00387-3,P00387,7.89,11.08,28.0,3.72,14708.95
+Non-magnetic,platelet,16,Isoform B of Reticulon-4,RTN4,Q9NQC3-2,Q9NQC3-2,7.87,3.7,18.0,3.82,11397.72
+Non-magnetic,platelet,17,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.87,5.07,57.0,4.25,4124.63
+Non-magnetic,platelet,18,Voltage-dependent anion-selective channel protein 3,VDAC3,Q9Y277,Q9Y277,7.83,8.23,24.0,3.68,14299.14
+Non-magnetic,platelet,19,PRA1 family protein 3,ARL6IP5,O75915,O75915,7.83,9.7,7.0,3.6,17111.47
+Non-magnetic,platelet,20,Isoform SERCA3B of Sarcoplasmic/endoplasmic reticulum calcium ATPase 3,ATP2A3,Q93084-1,Q93084-1,7.8,11.8,67.0,3.87,8548.85
+Non-magnetic,platelet,21,Myosin regulatory light polypeptide 9,MYL9,P24844,P24844,7.76,8.36,18.0,3.84,8371.36
+Non-magnetic,platelet,22,"Isoform 2 of HLA class I histocompatibility antigen, A alpha chain",HLA-A,P04439-2,P04439-2,7.74,5.82,20.0,4.43,2045.82
+Non-magnetic,platelet,23,Thromboxane-A synthase,TBXAS1,P24557,P24557,7.71,8.77,50.0,3.29,26107.66
+Non-magnetic,platelet,24,Ras-related protein Rab-27B,RAB27B,O00194,O00194,7.67,15.13,22.0,3.74,8539.19
+Non-magnetic,platelet,25,Calnexin,CANX,P27824;P27824-2,P27824,7.61,13.93,48.0,3.58,10627.16
+Non-magnetic,platelet,26,ADP/ATP translocase 2,SLC25A5,P05141,P05141,7.57,7.61,22.0,4.06,3217.3
+Non-magnetic,platelet,27,Tubulin alpha-1C chain,TUBA1C,Q9BQE3,Q9BQE3,7.56,7.07,12.0,4.03,3366.79
+Non-magnetic,platelet,28,Junctional adhesion molecule A,F11R,Q9Y624,Q9Y624,7.54,8.67,14.0,4.06,3018.52
+Non-magnetic,platelet,29,Stomatin,STOM,P27105,P27105,7.51,5.71,31.0,4.15,2333.82
+Non-magnetic,platelet,30,Myosin regulatory light chain 12A,MYL12A,P19105,P19105,7.51,9.56,8.0,4.12,1325.55
+Non-magnetic,erythrocyte,1,Hemoglobin subunit beta,HBB,P68871,P68871,10.28,19.67,46.0,5.95,21132.26
+Non-magnetic,erythrocyte,2,Hemoglobin subunit alpha,HBA1,P69905,P69905,10.18,23.0,27.0,5.96,16687.67
+Non-magnetic,erythrocyte,3,Band 3 anion transport protein,SLC4A1,P02730,P02730,10.05,22.3,76.0,5.69,22654.89
+Non-magnetic,erythrocyte,4,"Solute carrier family 2, facilitated glucose transporter member 1",SLC2A1,P11166,P11166,9.26,22.79,24.0,4.87,24240.66
+Non-magnetic,erythrocyte,5,Glycophorin-A,GYPA,P02724;P02724-2;P02724-3,P02724,9.17,25.13,4.0,4.61,36149.71
+Non-magnetic,erythrocyte,6,Hemoglobin subunit delta,HBD,P02042,P02042,9.06,22.05,19.0,4.34,52046.23
+Non-magnetic,erythrocyte,7,Hemoglobin subunit gamma-2,HBG2,P69892,P69892,9.05,21.31,26.0,4.31,55257.62
+Non-magnetic,erythrocyte,8,Ammonium transporter Rh type A,RHAG,Q02094,Q02094,9.01,21.86,6.0,4.55,28460.9
+Non-magnetic,erythrocyte,9,Stomatin,STOM,P27105,P27105,8.87,25.83,38.0,4.34,34124.95
+Non-magnetic,erythrocyte,10,Carbonic anhydrase 1,CA1,P00915,P00915,8.83,23.77,30.0,4.41,26652.85
+Non-magnetic,erythrocyte,11,Flotillin-1,FLOT1,O75955,O75955,8.54,25.37,44.0,3.75,62543.47
+Non-magnetic,erythrocyte,12,Small integral membrane protein 1,SMIM1,B2RUZ4,B2RUZ4,8.52,23.48,6.0,3.31,160056.09
+Non-magnetic,erythrocyte,13,Urea transporter 1,SLC14A1,Q13336,Q13336,8.51,24.89,15.0,3.52,98809.53
+Non-magnetic,erythrocyte,14,Blood group Rh(D) polypeptide,RHD,Q02161,Q02161,8.51,21.32,8.0,4.07,27981.44
+Non-magnetic,erythrocyte,15,Beta-adducin,ADD2,P35612,P35612,8.45,23.36,75.0,3.74,50806.41
+Non-magnetic,erythrocyte,16,55 kDa erythrocyte membrane protein,MPP1,Q00013,Q00013,8.4,28.89,32.0,3.83,35421.49
+Non-magnetic,erythrocyte,17,Isoform 2 of Equilibrative nucleoside transporter 1,SLC29A1,Q99808-2,Q99808-2,8.38,29.38,13.0,3.6,56942.38
+Non-magnetic,erythrocyte,18,Flavin reductase (NADPH),BLVRB,P30043,P30043,8.33,17.47,22.0,3.93,24650.07
+Non-magnetic,erythrocyte,19,Flotillin-2,FLOT2,Q14254,Q14254,8.32,26.16,48.0,3.72,39798.07
+Non-magnetic,erythrocyte,20,Isoform 3 of Basigin,BSG,P35613-3,P35613-3,8.28,25.08,14.0,3.68,38492.58
+Non-magnetic,erythrocyte,21,Isoform 3 of Alpha-adducin,ADD1,P35611-3,P35611-3,8.27,22.33,52.0,3.79,29963.74
+Non-magnetic,erythrocyte,22,Peroxiredoxin-2,PRDX2,P32119,P32119,8.26,24.49,19.0,4.13,13463.2
+Non-magnetic,erythrocyte,23,Aquaporin-1,AQP1,P29972,P29972,8.25,25.7,4.0,3.85,24624.84
+Non-magnetic,erythrocyte,24,Isoform Er5 of Ankyrin-1,ANK1,P16157-3,P16157-3,8.23,24.9,138.0,4.15,11777.83
+Non-magnetic,erythrocyte,25,Isoform Long of Protein 4.2,EPB42,P16452-2,P16452-2,8.23,22.31,42.0,3.83,24984.0
+Non-magnetic,erythrocyte,26,Glyceraldehyde-3-phosphate dehydrogenase,GAPDH,P04406,P04406,8.22,23.08,24.0,4.77,2826.92
+Non-magnetic,erythrocyte,27,"Isoform 2 of Spectrin beta chain, erythrocytic",SPTB,P11277-2,P11277-2,8.16,21.31,196.0,4.29,7443.32
+Non-magnetic,erythrocyte,28,Glycophorin-C,GYPC,P04921;P04921-2;P04921-3,P04921,8.1,27.23,3.0,3.57,34096.41
+Non-magnetic,erythrocyte,29,"Spectrin alpha chain, erythrocytic 1",SPTA1,P02549,P02549,8.07,24.94,206.0,4.17,7860.86
+Non-magnetic,erythrocyte,30,Protein 4.1,EPB41,P11171,P11171,8.05,23.66,61.0,3.89,14397.13
+Non-magnetic,pbmc,1,Histone H2A.Z,H2AZ1;H2AZ2,P0C0S5;Q71UI9,P0C0S5,8.8,24.12,6.0,4.51,19493.05
+Non-magnetic,pbmc,2,Moesin,MSN,P26038,P26038,8.23,24.56,58.0,5.19,1094.0
+Non-magnetic,pbmc,3,Integrin beta-3,ITGB3,P05106,P05106,8.22,24.61,38.0,4.29,8417.15
+Non-magnetic,pbmc,4,Integrin alpha-IIb,ITGA2B,P08514,P08514,8.09,15.9,52.0,4.49,3940.09
+Non-magnetic,pbmc,5,Histone H1.4,H1-4,P10412,P10412,8.09,26.74,8.0,4.42,4698.49
+Non-magnetic,pbmc,6,Fermitin family homolog 3,FERMT3,Q86UX7;Q86UX7-2,Q86UX7,7.8,29.31,52.0,4.12,4769.42
+Non-magnetic,pbmc,7,60S ribosomal protein L12,RPL12,P30050,P30050,7.7,27.8,10.0,3.23,29998.8
+Non-magnetic,pbmc,8,Isoform 2 of Filamin-A,FLNA,P21333-2,P21333-2,7.69,19.9,151.0,4.36,2162.3
+Non-magnetic,pbmc,9,Ras-related protein Rap-1A,RAP1A,P62834,P62834,7.66,27.2,15.0,4.28,2422.07
+Non-magnetic,pbmc,10,Ras-related protein Rap-1b,RAP1B,P61224,P61224,7.61,19.45,6.0,4.11,3172.74
+Non-magnetic,pbmc,11,60S ribosomal protein L22,RPL22,P35268,P35268,7.58,25.39,6.0,3.55,10635.98
+Non-magnetic,pbmc,12,"Nascent polypeptide-associated complex subunit alpha, muscle-specific form",NACA,E9PAV3,E9PAV3,7.57,29.17,6.0,3.61,9255.83
+Non-magnetic,pbmc,13,"Isoform 2 of HLA class I histocompatibility antigen, A alpha chain",HLA-A,P04439-2,P04439-2,7.57,25.17,21.0,4.28,1925.58
+Non-magnetic,pbmc,14,ADP-ribosylation factor 4,ARF4,P18085,P18085,7.57,24.8,7.0,3.6,9085.9
+Non-magnetic,pbmc,15,NADH-cytochrome b5 reductase 3,CYB5R3,P00387;P00387-2;P00387-3,P00387,7.52,19.23,18.0,3.65,7506.12
+Non-magnetic,pbmc,16,Isoform 3 of Actin-related protein 2/3 complex subunit 4,ARPC4,P59998-3,P59998-3,7.52,24.83,12.0,4.18,2189.28
+Non-magnetic,pbmc,17,Histone H1.5,H1-5,P16401,P16401,7.5,28.61,6.0,3.8,5063.4
+Non-magnetic,pbmc,18,Ras-related protein Rab-8A,RAB8A,P61006,P61006,7.47,21.21,12.0,4.36,1301.3
+Non-magnetic,pbmc,19,Platelet glycoprotein Ib alpha chain,GP1BA,P07359,P07359,7.46,23.81,18.0,4.09,2393.25
+Non-magnetic,pbmc,20,Peptidyl-prolyl cis-trans isomerase A,PPIA,P62937,P62937,7.46,26.25,14.0,3.68,5795.25
+Non-magnetic,pbmc,21,Microsomal glutathione S-transferase 2,MGST2,Q99735,Q99735,7.43,27.97,4.0,3.62,6479.71
+Non-magnetic,pbmc,22,Transmembrane emp24 domain-containing protein 9,TMED9,Q9BVK6,Q9BVK6,7.42,29.83,12.0,3.26,14438.91
+Non-magnetic,pbmc,23,ADP-ribosylation factor 1,ARF1,P84077,P84077,7.41,23.41,14.0,4.21,1617.67
+Non-magnetic,pbmc,24,RNA-binding protein Raly,RALY,Q9UKM9,Q9UKM9,7.38,28.2,11.0,3.18,16191.75
+Non-magnetic,pbmc,25,Isoform 2 of Tubulin alpha-4A chain,TUBA4A,P68366-2,P68366-2,7.35,29.95,34.0,3.97,2389.29
+Non-magnetic,pbmc,26,Annexin A1,ANXA1,P04083,P04083,7.35,27.85,26.0,3.96,1751.25
+Non-magnetic,pbmc,27,Guanine nucleotide-binding protein G(i) subunit alpha-2,GNAI2,P04899,P04899,7.35,27.21,19.0,4.3,1121.01
+Non-magnetic,pbmc,28,Thromboxane-A synthase,TBXAS1,P24557,P24557,7.34,26.22,42.0,3.41,8716.11
+Non-magnetic,pbmc,29,Ras-related protein Rab-27B,RAB27B,O00194,O00194,7.33,17.9,16.0,3.56,5999.77
+Non-magnetic,pbmc,30,60S ribosomal protein L6,RPL6,Q02878,Q02878,7.32,29.08,11.0,3.57,5546.27
