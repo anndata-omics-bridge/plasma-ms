@@ -9,6 +9,10 @@ This repository is the supplement to a proposal for the
 itself can stay short, and so that anyone who wants to bring **their own plasma data or their own
 metric** has one place to look.
 
+The [`HACKATHON.md`](HACKATHON.md) project plan defines the four-day scope. The datasets, panels,
+and broader metric catalogue below provide background and possible extension paths; they are not all
+hackathon deliverables.
+
 > **We are open to new data and new metrics.** The dataset table below is a starting set, not a
 > closed list. If you have a plasma cohort — any vendor, DDA or DIA, public or contributed — or a QC
 > metric you think belongs in the catalogue, open an issue. Bringing a dataset that breaks a metric
@@ -18,9 +22,9 @@ metric** has one place to look.
 
 ## 1. Why plasma QC needs a quantitative container
 
-A haemolysed sample, a platelet-contaminated draw, or a coagulation-activated tube produces a plasma
-protein table that looks well-formed and is scientifically worthless. Instrument-level QC catches
-none of it.
+A haemolysed sample, a platelet-contaminated draw, or a coagulation-activated tube can produce a
+well-formed plasma protein table while biasing its biological interpretation. Instrument-level QC
+does not detect every such sample-quality problem.
 
 The community QC standard — HUPO-PSI **mzQC** and its controlled vocabulary — has a category for
 every kind of QC metric, and the ones that would cover this are **empty**. Counted against
@@ -149,8 +153,9 @@ coagulation = `{}`.
    (`ATRN CDH5 CST3 DSP GP5 GPLD1 LTF MAN1A1 MASP1 PF4 PROC WDR1`), 11 code-only
    (`ALCAM APOA2 C1S C3 CNTN3 FLNA HYDIN ITIH2 MET TLN1 TNXB`). **Reconciling these is open work.**
 
-**The index definition**, to implement verbatim rather than reinvent: the summed intensities of a
-panel's proteins divided by the summed intensities of all quantified plasma proteins.
+The Geyer reference implementation uses the summed intensities of a panel's proteins divided by the
+summed intensities of all quantified plasma proteins. This is one candidate score, not a prescribed
+definition. The hackathon will document and evaluate competing definitions before selecting one.
 
 Also worth noting: Table EV2 lists 30/30, while the Figure 2 legend says *"29 quality markers"* for
 each; the preprint records that `NIF3L1` was excluded for inconsistent identification. The CSV
@@ -189,15 +194,16 @@ analyser**. No PRIDE accession was found in the full text. If you know it, pleas
 
 ---
 
-## 5. The QC metric catalogue, by data level
+## 5. Broader QC catalogue, by data level
 
-The level a metric needs is what organises the work — and what makes the metrics that need
-precursor-ion or fragment evidence impossible to compute from a protein table alone.
+This catalogue is background and future work beyond the minimum defined in
+[`HACKATHON.md`](HACKATHON.md). The required data level organises the candidates and makes clear
+which measures cannot be computed from a protein table alone.
 
 | Level | Metrics |
 | --- | --- |
 | **Sample preparation** (`MS:4000023`, empty) | erythrocyte / haemolysis index; platelet index; coagulation contrast; contaminant abundance fraction; missed-cleavage rate; semi-tryptic fraction |
-| **Quantification** (`MS:4000010`, empty) | replicate CV distribution and median CV; data completeness per sample and per feature; dynamic range (P90 − P10, log10); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
+| **Quantification** (`MS:4000010`, empty) | replicate CV distribution and median CV; data completeness per sample and per feature; candidate dynamic-range summaries (for example P90 − P10 on a documented log scale); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
 | **Precursor ion** | q-value distribution and decoy separation; retention-time stability and iRT residuals; charge-state distribution; match-between-runs transfer rate |
 | **Fragment** | peak-shape similarity; transition-ratio consistency; interference / co-isolation; spectral-library similarity |
 | **Run** | TIC, MS1/MS2 counts, injection time, gradient stability |
@@ -210,7 +216,7 @@ Avant-garde curation metrics (Vaca Jacome *et al.* 2020,
 
 ---
 
-## 6. Related work, honestly
+## 6. Related work
 
 Putting quantitative proteomics into AnnData/MuData is **not novel**. Five active projects do it, and
 three ship QC metrics: `alphapepttools` (MannLabs, Apache-2.0), `mulink` (MIT), `msmu` (BSD-3),
