@@ -384,8 +384,8 @@ scientific definitions, implementation, validation, and visualisation.
   or another JavaScript-based tool.
 - Complete the measure definitions, validation records, examples, and contributor instructions.
 - Prepare the agreed software, panels, validation outputs, and enriched MuData examples for
-  publication through the
-  [AnnData Proteomics Bridge GitHub organisation](https://github.com/anndata-omics-bridge).
+  publication in the
+  [`plasma-ms` repository](https://github.com/anndata-omics-bridge/plasma-ms).
 - Prepare the EuBIC-MS presentation and assign the post-event manuscript work.
 
 The groups can work in parallel, but they must converge on the same enriched MuData artifact and
@@ -492,8 +492,8 @@ During and after the hackathon, participants will:
 
 - document the quality-measure definitions and validation results;
 - present the workflow and findings to the EuBIC-MS community;
-- publish software, panels, validation outputs, and enriched MuData examples through the
-  [AnnData Proteomics Bridge GitHub organisation](https://github.com/anndata-omics-bridge); and
+- publish software, panels, validation outputs, and enriched MuData examples in the
+  [`plasma-ms` repository](https://github.com/anndata-omics-bridge/plasma-ms); and
 - prepare a manuscript about the cross-dataset and cross-modality evaluation.
 
 The published material should identify maintainers for the code, panels, viewer example, and
