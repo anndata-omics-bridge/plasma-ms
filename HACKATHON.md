@@ -297,13 +297,27 @@ large conversion exercise.
 | `PXD013231` | DIA study of 1,508 plasma samples with interleaved pooled controls and plate and run-order annotations ([Bruderer et al., 2019](https://doi.org/10.1074/mcp.RA118.001288)) | Candidate batch-aware cohort; confirm the mapping between annotations and deposited quantitative reports before use |
 | `PXD029009` | Large scanning-SWATH plasma cohort with a curated 1,189-row SDRF | Candidate cohort-scale test; available phenotype metadata are limited |
 | `PXD056598` | ProteoBench plasma/yeast/*E. coli* benchmark | Existing APB/ProteoBench example; not the biological plasma-QC target |
-| Olink dataset | Accessible plasma study or executable hand-off agreed with discussion 11 | Protein mapping, assay coverage, marker overlap, replication, and metadata must be checked before the event |
+| `PXD060573` / `PAD000002` | The same starting plasma was analysed with Olink Explore HT and five label-free DIA-MS preparation workflows. The study includes five preparation replicates, CRP spike levels, lipid interference, a matrix-matched calibration curve, and a 40-person healthy-versus-stage-4-NSCLC cohort ([Beimers et al., 2025](https://doi.org/10.1021/acs.jproteome.5c00221)) | Primary paired MS/Olink candidate. Select one documented MS preparation for the direct cross-modality evaluation. Analyse differences among MS preparations separately, and verify the deposited sample mapping before the event |
 | Participant datasets | Additional biological plasma studies | Include only when identifiers, metadata, permissions, and study design support a defined measure |
 
 The final prepared set must include at least one DDA study and one DIA study. The organisers will
 quantify representative inputs with FragPipe and DIA-NN and convert the resulting tables with APB.
 The exact pairing of dataset and quantification tool must be documented. Quantification-tool
 comparison is not an evaluation target.
+
+`PXD060573` contains the raw MS data and search outputs; `PAD000002` contains the Olink NPX table.
+The organisers will create a versioned map between the deposited sample identifiers. This paired
+design can support cross-modality tests of applicable protein-level measures, subject to assay and
+panel overlap. A direct MS/Olink comparison will use one selected MS preparation so that a
+preparation-workflow difference is not mislabelled as a modality difference. The other MS
+preparations provide a separate test of preparation sensitivity.
+
+The five experiments have distinct validation roles. Preparation replicates support completeness
+and precision. CRP spike levels test linearity for methods that measure CRP; its absence from the
+Olink assay is an assay-coverage result, not a failed measurement. The lipid perturbation tests
+robustness to that interference. The matrix-matched calibration curve supports platform-specific
+LOD, LOQ, and dynamic-range analyses. The 40-person cohort supports mapped cross-modality analyses
+of biological samples. These roles must remain separate when results are interpreted.
 
 For every validation result, the team will distinguish:
 
@@ -328,10 +342,13 @@ The organisers will complete the following work before the four project days:
   plasma proteins.
 - Prepare the Geyer and Korff cellular panels and the Korff pure-plasma reference profiles with
   versioned provenance. Retain panel coverage beside every candidate contamination score.
-- Secure an accessible Olink plasma dataset or agree on an executable hand-off with the discussion
-  11 team.
-- Verify assay-to-protein mapping and panel overlap for the Olink data. Select data that support the
-  core protein-level measures while retaining each Olink assay as a distinct measured feature.
+- Download and inspect the paired `PXD060573` MS and `PAD000002` Olink deposits. Select and document
+  one MS preparation for the direct cross-modality evaluation.
+- Build and version the sample map between the selected DIA-MS data and Olink NPX table. Verify it
+  against the study metadata and analysis code. If a reliable map cannot be recovered, agree on an
+  executable hand-off with the discussion 11 team.
+- Verify Olink assay-to-protein mapping, assay and sample quality flags, limits of detection, and
+  panel overlap. Retain each Olink assay as a distinct measured feature.
 - Retain plate, preparation-batch, acquisition-batch, control-sample, biological-covariate, and true
   run-order annotations when the source study provides them.
 - Prepare a viewer fixture and document how to add one quality measure and one visualisation with
@@ -353,7 +370,8 @@ scientific definitions, implementation, validation, and visualisation.
   external reference profiles support it.
 - Select batch and dynamic-range candidates only when the prepared controls and metadata support
   their interpretation.
-- Agree on identifiers and the Olink assay-to-protein mapping.
+- Confirm the `PXD060573`/`PAD000002` sample map, selected MS preparation, and Olink
+  assay-to-protein mapping.
 - Assign work across measures, data and panels, Olink testing, and visualisation.
 
 ### Day 2 — implement and enrich
@@ -367,7 +385,7 @@ scientific definitions, implementation, validation, and visualisation.
 ### Day 3 — validate across studies and modalities
 
 - Evaluate each core protein-level measure on at least two MS datasets.
-- Evaluate each core protein-level measure on the prepared Olink data.
+- Evaluate each applicable core protein-level measure on the matched `PXD060573`/`PAD000002` data.
 - Separate Olink assay-target coverage from missing or low-quality measurements.
 - Record each measure as shared unchanged, shared with platform-specific interpretation,
   MS-specific, DIA-specific, or not evaluable with the available data.
@@ -431,15 +449,20 @@ MS metabolomics data. Adapter migration and metabolomics validation are not four
 
 ## 10. Relationship to the Olink project
 
-The [Olink/proteoform project](https://github.com/EuBIC/EuBIC2027/discussions/11) provides a second
-measurement modality for testing the protein-level definitions. The APB and Olink project teams
-will establish:
+The paired `PXD060573`/`PAD000002` study provides the primary cross-modality dataset. The same
+starting plasma was measured with DIA-MS and Olink Explore HT. The
+[Olink/proteoform project](https://github.com/EuBIC/EuBIC2027/discussions/11) provides expertise in
+the second measurement modality. The APB and Olink project teams will establish:
 
-- an accessible Olink plasma dataset or an executable analysis hand-off;
+- the selected DIA-MS preparation and a versioned MS/Olink sample map;
 - a mapping from Olink assays and panel members to protein identifiers;
 - the Olink assays that target each expected-protein or contamination panel;
 - the measures that can be evaluated with the study design and marker overlap; and
 - the interpretation of each cross-modality result.
+
+If the deposited data cannot be mapped reliably, the teams may use an executable analysis hand-off
+instead. Comparisons among the five DIA-MS preparation workflows will be reported as preparation
+sensitivity, not as MS/Olink modality differences.
 
 Olink measures a predefined assay panel. Its coverage calculation must distinguish an assay that the
 platform did not target from a targeted assay that failed an observation or quality criterion. A
@@ -469,7 +492,7 @@ direction, and missing-data interpretation, and work on a real enriched MuData a
 
 | Risk | Mitigation |
 | --- | --- |
-| The Olink data or hand-off is unavailable | Agree on access and execution before the event; record the dependency explicitly |
+| The deposited MS and Olink samples cannot be mapped reliably | Validate identifiers against the paper, metadata, and analysis code before the event; otherwise use an executable hand-off and record the limitation |
 | An Olink panel lacks the required markers | Report the measure as not evaluable; do not convert missing targets into a negative QC result |
 | Raw values differ across MS and Olink | Compare definitions and within-platform results; use standardisation only when scientifically justified |
 | A precision statistic mixes biological and technical variation | Require participants to state the replicate or repeated-measure design before calculation |
@@ -513,7 +536,8 @@ revise the result.
   implementation.
 - Choose and version the expected-protein and biomarker panels.
 - Resolve the Geyer coagulation-panel discrepancy or state which sourced version the project uses.
-- Secure the Olink dataset or executable hand-off and check marker overlap.
+- Prepare `PXD060573`/`PAD000002`, select one MS preparation, version the sample and feature maps,
+  and check marker overlap. Agree on an executable hand-off as a fallback.
 - Define the reference-comparison scale and precision design for each selected dataset.
 - Select datasets with sufficient controls and metadata for the broader batch and dynamic-range
   targets, or record that those targets are not evaluable.
@@ -563,12 +587,16 @@ revise the result.
 
 ### Metadata, APB context, and visualisation
 
-12. Dai C, *et al.* (2021). A proteomics sample metadata representation for multiomics integration
+12. Beimers L, *et al.* (2025). Technical Evaluation of Plasma Proteomics Technologies. *Journal
+    of Proteome Research*. `10.1021/acs.jproteome.5c00221`. Paired Olink Explore HT and DIA-MS
+    measurements of the same plasma material, including technical replicates, controlled
+    perturbations, and a 40-person clinical cohort. Data: `PXD060573` and `PAD000002`.
+13. Dai C, *et al.* (2021). A proteomics sample metadata representation for multiomics integration
    and big data analysis. *Nature Communications* 12:5854. `10.1038/s41467-021-26111-3`.
-13. Devreese R, Jachmann C, Van Puyvelde B, Anagho-Mattanovich HA, Wolski WE, Webel H, *et al.*
+14. Devreese R, Jachmann C, Van Puyvelde B, Anagho-Mattanovich HA, Wolski WE, Webel H, *et al.*
    (2025). ProteoBench: the community-curated platform for comparing proteomics data analysis
    workflows. Preprint. `10.64898/2025.12.09.692895`.
-14. Keller MS, *et al.* (2024). Vitessce: integrative visualization of multimodal and spatially
+15. Keller MS, *et al.* (2024). Vitessce: integrative visualization of multimodal and spatially
     resolved single-cell data. *Nature Methods* 22:63–67. `10.1038/s41592-024-02436-x`.
 
 ### Data and software resources
@@ -577,5 +605,6 @@ revise the result.
 - APB JavaScript viewer: <https://github.com/anndata-omics-bridge/visualiser-test>
 - Geyer plasma QC reference implementation:
   <https://github.com/MannLabs/Quality-Control-of-the-Plasma-Proteome>
-- Candidate public datasets: `PXD011749`, `PXD063572`, `PXD063593`, `PXD054073`, `PXD029009`, and
-  `PXD056598`.
+- Beimers analysis code: <https://github.com/coongroup/Plasma-Tech-Comparison>
+- Candidate public datasets: paired `PXD060573`/`PAD000002`, `PXD011749`, `PXD063572`,
+  `PXD063593`, `PXD054073`, `PXD029009`, and `PXD056598`.
