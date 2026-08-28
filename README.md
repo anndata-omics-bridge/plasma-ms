@@ -155,8 +155,8 @@ with five plasma workflows. The derived files in [`data/`](data/README.md) add:
 These files support two separate tasks. Panel membership provides candidates for contamination
 measures. The pure-plasma profiles provide an external abundance-ordering reference. The latter can
 support profile-shape and rank-concordance tests, but it is not a universal intensity baseline.
-`Sera Sil 700` is the nearest published analogue to ENRICH-iST among these workflows. Panel
-membership may transfer between instruments; absolute values and score thresholds do not. Every
+Panel membership may transfer between instruments and preparations; absolute values and score
+thresholds do not. Every
 analysis must therefore record the platform, preparation, quantitative scale, feature mapping, and
 reference used.
 
@@ -179,7 +179,6 @@ CC0 or left the default *EBI terms of use*.
 | [`PXD029009`](https://www.ebi.ac.uk/pride/archive/projects/PXD029009) | COVID plasma cohort, Scanning SWATH | **Curated 1189-row SDRF** (868 plasma, 559 individuals). Caveat: `age`, `sex`, `BMI` are `not available` for all rows | DIA-NN | CC0 |
 | [`PXD025752`](https://www.ebi.ac.uk/pride/archive/projects/PXD025752) | Time-resolved COVID plasma | **Fragment-level columns in the deposited report** (`Fragment.Quant.Raw`, `Fragment.Correlations`); `batch_info` with `Sample.Type` incl. `SP.QC.Plasma`, `MS.QC` | DIA-NN | CC0 |
 | `PXD056598` | ProteoBench PYE (Plasma / Yeast / E. coli) benchmark | Known spike-in ratios | multiple | CC-BY-4.0 |
-| Contributed FGCZ cohort | ENRICH-iST study with 357 biological EDTA-plasma samples plus 11 repeated control preparations | Four plates; one combined search and four per-plate searches of the same raw files | DIA-NN 2.6 / timsTOF flex | Access controlled |
 
 **Practical note.** Several of these deposit search results alongside very large raw sets — for
 `PXD054073` the 252 search archives are **12.25 GB** against 1038 GB of raw. Start from the search

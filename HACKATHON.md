@@ -224,11 +224,10 @@ variance. They will not rely only on a PC1 significance test. The report must st
 complete features or imputation because batch-specific missingness can create apparent multivariate
 structure.
 
-Physical plate comparisons will use results from one common combined search. A comparison of the
-same runs processed in separate per-plate and combined DIA-NN searches measures sensitivity to the
-search, transfer, inference, and normalisation context. It does not establish a physical batch
-effect. Acquisition-order drift will be evaluated only when true chronological timestamps or a
-global run order are available.
+Every batch comparison must use results from one common search. The same runs processed in
+separate searches differ by search, transfer, inference, and normalisation context, which is not
+a physical batch effect. Acquisition-order drift will be evaluated only when true chronological
+timestamps or a global run order are available.
 
 The hackathon will also leave the dynamic-range formula open for evaluation. An interquantile span
 is one candidate, not a prescribed definition. Participants will not compare absolute MS and Olink
@@ -271,10 +270,9 @@ support panel derivation; they do not prescribe the formula for a contamination 
 [Korff et al. 2025](https://doi.org/10.1038/s44321-025-00309-0) provide complementary
 workflow-independent and workflow-specific 30-marker panels for platelets, erythrocytes, and PBMCs.
 They also provide pure-plasma reference profiles for five preparation workflows. This repository
-stores the derived tables and their provenance in [`data/`](data/README.md). The workflow-specific
-`Sera Sil 700` results are the nearest available analogue to ENRICH-iST, but they do not define an
-ENRICH-iST threshold. Panel membership may transfer across platforms; absolute intensities and score
-thresholds do not.
+stores the derived tables and their provenance in [`data/`](data/README.md). Panel membership may
+transfer across platforms; absolute intensities and score thresholds do not, and a panel derived
+under one preparation workflow does not define a threshold for a different one.
 
 The hackathon will treat panel derivation and score definition as separate tasks. Participants will
 propose candidate score definitions, state their required quantitative scale and missing-value
@@ -299,7 +297,6 @@ large conversion exercise.
 | `PXD013231` | DIA study of 1,508 plasma samples with interleaved pooled controls and plate and run-order annotations ([Bruderer et al., 2019](https://doi.org/10.1074/mcp.RA118.001288)) | Candidate batch-aware cohort; confirm the mapping between annotations and deposited quantitative reports before use |
 | `PXD029009` | Large scanning-SWATH plasma cohort with a curated 1,189-row SDRF | Candidate cohort-scale test; available phenotype metadata are limited |
 | `PXD056598` | ProteoBench plasma/yeast/*E. coli* benchmark | Existing APB/ProteoBench example; not the biological plasma-QC target |
-| Contributed FGCZ ENRICH-iST cohort | 357 biological EDTA-plasma samples and 11 repeated control preparations across four plates; DIA-NN output from one combined search and four separate per-plate searches of the same raw files | Access controlled; useful for cohort-scale, control-reference, contamination, and batch-aware evaluation. Physical plate comparisons use the combined search; per-plate versus combined results test search-context sensitivity |
 | Olink dataset | Accessible plasma study or executable hand-off agreed with discussion 11 | Protein mapping, assay coverage, marker overlap, replication, and metadata must be checked before the event |
 | Participant datasets | Additional biological plasma studies | Include only when identifiers, metadata, permissions, and study design support a defined measure |
 

@@ -35,10 +35,10 @@ pure-plasma material. Platelet and erythrocyte candidates required a cell/plasma
 specific intensity and CV thresholds, required at least two precursors, ordered candidates by
 cell-type abundance, and retained 30 proteins. Consult the publication before changing these rules.
 
-`Sera Sil 700` is the nearest workflow in this source to ENRICH-iST. This is an analogy, not an
-identity. Panel membership can be evaluated across workflows and platforms, but the absolute
-intensities and derived score thresholds are not transferable without validation. Always retain the
-observed member count and fraction beside a panel-based score.
+A panel derived under one preparation workflow is an analogy for another, not an identity. Panel
+membership can be evaluated across workflows and platforms, but the absolute intensities and
+derived score thresholds are not transferable without validation. Always retain the observed
+member count and fraction beside a panel-based score.
 
 ## Integrity
 
