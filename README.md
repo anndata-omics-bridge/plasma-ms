@@ -51,26 +51,43 @@ Two further gaps, measured rather than asserted:
 
 ---
 
-## 2. Contaminants in plasma are *measured*, not inherited
+## 2. "Contaminant" in plasma means several different things
 
-This is the central methodological point, and it is Geyer's.
+The word does too much work. At least two distinct classes matter, and conflating them is the error:
 
-A plasma contaminant panel is not a curated FASTA of adventitious proteins. It is derived
-**experimentally**: take the cells that contaminate a blood draw — erythrocytes, platelets — spike
-them into clean plasma across a dilution series, count the cells, and see which proteins rise. What
-rises *is* the contamination signature, for that matrix, on that instrument.
+| Class | Examples | Origin | Covered by a list today? |
+| --- | --- | --- | --- |
+| **Handling / process contaminants** | keratin, trypsin autolysis products, BSA, streptavidin and protein A/G from columns, polymers and detergents, column bleed | the lab, not the donor | Yes — the cRAP family and the Hao universal library, and they do it reasonably well |
+| **Matrix contamination** | erythrocyte lysis, platelet activation, coagulation cascade, depletion or enrichment breakthrough, extracellular-vesicle content, tissue leakage, anticoagulant and storage effects | the donor and the draw — **real human protein, in the wrong compartment** | Barely. Three panels exist (§3). For most of the rest we found none. |
 
-Geyer *et al.* (2019) did exactly this: erythrocyte and platelet fractions diluted in **nine steps
-over a 10⁷ range** into platelet-free plasma, with cell counting, plus reference proteomes of
-erythrocytes, platelets, plasma, platelet-rich plasma and whole blood from 20 individuals. The
-selection rule was *"the 30 most abundant proteins with CVs below 30% and at least a 10-fold higher
-expression level in the contaminating cell type than in plasma."* The coagulation panel came from a
-plasma-versus-serum contrast instead, because coagulation is a process, not a cell.
+The second class is what ruins plasma biomarker studies, and **it is structurally invisible to a
+contaminant FASTA**. The offending proteins are genuine human proteins that belong in the sample —
+they are simply from the wrong compartment, or present because the draw went badly. You cannot
+exclude them by sequence, only by **quantitative pattern**. That is why this belongs to a QC layer
+over a quantitative container rather than to a search database.
 
-### Why the inherited lists are actively wrong here
+### Getting a matrix panel: measure it
 
-The generic contaminant FASTAs are built for cell culture and affinity pulldowns. Applied to plasma
-they remove signal:
+Geyer *et al.* is the worked precedent for the *cellular* subset: spike erythrocytes and platelets
+into clean plasma across a counted dilution series and see which proteins rise — nine steps over a
+10⁷ range **with cell counting** — selecting *"the 30 most abundant proteins with CVs below 30% and at
+least a 10-fold higher expression level in the contaminating cell type than in plasma."* The
+coagulation panel came from a plasma-versus-serum contrast instead, because coagulation is a process
+rather than a cell.
+
+That is a reproducible protocol rather than a lookup table, which is the useful part: it can be
+re-derived for a new matrix, a new enrichment workflow or a new instrument, and the *result* is what
+gets versioned and attached to the data.
+
+**Three panels is not coverage.** Depletion and enrichment breakthrough, EV content, tissue leakage,
+anticoagulant chemistry and storage-driven proteolysis are all matrix contamination, and we found **no
+published machine-readable panel** for any of them — an absent search result, not a proven absence.
+Deriving one more by the same protocol, against the bead-enrichment data in `PXD063572`/`PXD063593`,
+is a well-shaped piece of work. **If you know of a panel we have missed, please open an issue.**
+
+### The two classes collide
+
+Applying the handling-contaminant list to plasma deletes matrix markers:
 
 - Appending Cambridge CCP cRAP to a plasma search and then filtering contaminants **would delete 9
   of the 99 Geyer plasma QC markers, including 6 of the top haemolysis markers.**
@@ -89,12 +106,10 @@ Entry counts, by `grep -c '^>'`:
 | GPM cRAP | 116 | GPM terms | HTTP URL dead; only `ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta`. A Zenodo copy is byte-identical, md5 `c1640d4054ec771d05c6f4493307f29f`. |
 | Cambridge CCP cRAP | 125 | — | |
 | MaxQuant `contaminants.fasta` | 245 | — | Decayed: 152 of 245 (62%) carry no `Gene_Symbol=` and no `Tax_Id=`; 27 have no accession at all. |
-| Hao universal contaminant library | 381 | **none declared** | Best content, **cannot be vendored** — the GitHub API reports `license: None`. |
+| Hao universal contaminant library | 381 | **none declared** | Best content for class 1, **cannot be vendored** — the GitHub API reports `license: None`. |
 
-**Conclusion:** treat contamination as a matrix-specific, empirically derived, versioned annotation
-attached to the data — not as a FASTA appended at search time.
-
----
+**Conclusion:** the goal is not a better contaminant FASTA. It is to **keep both classes, keep them
+separate, keep them versioned, and attach them to the data as annotations a metric can read.**
 
 ## 3. The quality-marker panels
 
