@@ -20,38 +20,17 @@ hackathon deliverables.
 
 ---
 
-## 1. Why plasma QC needs a quantitative container
+## 1. What this project addresses
 
 A haemolysed sample, a platelet-contaminated draw, or a coagulation-activated tube can produce a
 well-formed plasma protein table while biasing its biological interpretation. Instrument-level QC
 does not detect every such sample-quality problem.
 
-The community QC standard — HUPO-PSI **mzQC** and its controlled vocabulary — has a category for
-every kind of QC metric, and the ones that would cover this are **empty**. Counted against
-`psi-ms.obo`, `data-version: 4.1.259` (23 June 2026), the QC branch holds **197 terms**:
-
-| `has_metric_category` | Category | Terms |
-| --- | --- | ---: |
-| `MS:4000009` | ID free metric | 104 |
-| `MS:4000012` | single run based metric | 74 |
-| `MS:4000022` | MS2 metric | 62 |
-| `MS:4000008` | ID based metric | 41 |
-| `MS:4000021` | MS1 metric | 40 |
-| `MS:4000013` | multiple runs based metric | 7 |
-| **`MS:4000010`** | **quantification based metric** | **0** |
-| **`MS:4000023`** | **sample preparation metric** | **0** |
-| **`MS:4000073`** | **QC sample metric** | **0** |
-
-`MS:4000010` appears exactly once in the 1.17 MB file — as its own definition. Plasma QC is the
-intersection of the two empty categories that matter: quantitative measurements about how the
-*sample* was handled.
-
-Two further gaps, measured rather than asserted:
-
-- There is **no QC term for the coefficient of variation of a protein across replicates**. The only
-  CV term in the ontology, `MS:1003286`, describes a spectral-library peak attribute.
-- The only two protein-level QC terms have a vendor in their *names* — `MS:4000090` / `MS:4000091`,
-  *"principal component analysis of MaxQuant's protein group raw/lfq intensities"*.
+`plasma-ms` collects reference panels, datasets, and candidate measures for detecting these effects
+in studies with hundreds of biological samples. APB provides the quantitative container. It links
+sample metadata with protein-, peptide-, and ion-level measurements and can enrich those data with
+panel annotations, quality results, reference comparisons, and provenance. The hackathon will test
+which measures transfer between label-free DDA, DIA, and applicable Olink protein measurements.
 
 ---
 
@@ -223,8 +202,8 @@ which measures cannot be computed from a protein table alone.
 
 | Level | Metrics |
 | --- | --- |
-| **Sample preparation** (`MS:4000023`, empty) | erythrocyte / haemolysis index; platelet index; coagulation contrast; contaminant abundance fraction; missed-cleavage rate; semi-tryptic fraction |
-| **Quantification** (`MS:4000010`, empty) | abundance-profile or rank concordance against a documented reference, with lost and gained proteins reported separately; replicate CV distribution and median CV; data completeness per sample and per feature; candidate dynamic-range summaries (for example P90 − P10 on a documented log scale); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
+| **Sample preparation** | erythrocyte / haemolysis index; platelet index; coagulation contrast; contaminant abundance fraction; missed-cleavage rate; semi-tryptic fraction |
+| **Quantification** | abundance-profile or rank concordance against a documented reference, with lost and gained proteins reported separately; replicate CV distribution and median CV; data completeness per sample and per feature; candidate dynamic-range summaries (for example P90 − P10 on a documented log scale); albumin dominance / top-N signal share; biomarker-panel coverage and per-panel CV |
 | **Precursor ion** | q-value distribution and decoy separation; retention-time stability and iRT residuals; charge-state distribution; match-between-runs transfer rate |
 | **Fragment** | peak-shape similarity; transition-ratio consistency; interference / co-isolation; spectral-library similarity |
 | **Run** | TIC, MS1/MS2 counts, injection time, gradient stability |
@@ -252,9 +231,12 @@ of `fragment`; `qpx` explicitly collapses fragment rows), **plasma panels**, **n
 and **column preservation**.
 
 Existing QC tools cover the run and identification levels well and should be reused, not rebuilt:
-PTXQC, rawDiag / rawrr, QCloud2, MSstatsQC, Skyline AutoQC + Panorama, pmultiqc. Note that **PTXQC
-writes only a "mockup" mzQC file — the metric values are not exported — and its maintainer invites
-pull requests.**
+PTXQC, rawDiag / rawrr, QCloud2, MSstatsQC, Skyline AutoQC + Panorama, and pmultiqc.
+
+HUPO-PSI mzQC and the PSI-MS controlled vocabulary provide the community framework for reporting
+mass-spectrometry quality information. In PSI-MS version 4.1.259, no QC terms are classified as
+quantification-based or sample-preparation metrics. Extending mzQC or requesting
+controlled-vocabulary terms is outside the four-day hackathon scope.
 
 `QFeatures` / `SummarizedExperiment` (Bioconductor) already models assay hierarchies with
 `AssayLinks`, including hierarchy-aware subsetting. Any container-side claim has to answer that.
