@@ -400,7 +400,7 @@ scientific definitions, implementation, validation, and visualisation.
 - Complete the measure definitions, validation records, examples, and contributor instructions.
 - Prepare the agreed software, panels, validation outputs, and enriched MuData examples for
   publication in the
-  [`plasma-ms` repository](https://github.com/anndata-omics-bridge/plasma-ms).
+  [`apb-plasma` repository](https://github.com/anndata-omics-bridge/apb-plasma).
 - Prepare the EuBIC-MS presentation and assign the post-event manuscript work.
 
 The groups can work in parallel, but they must converge on the same enriched MuData artifact and
@@ -513,7 +513,7 @@ During and after the hackathon, participants will:
 - document the quality-measure definitions and validation results;
 - present the workflow and findings to the EuBIC-MS community;
 - publish software, panels, validation outputs, and enriched MuData examples in the
-  [`plasma-ms` repository](https://github.com/anndata-omics-bridge/plasma-ms); and
+  [`apb-plasma` repository](https://github.com/anndata-omics-bridge/apb-plasma); and
 - prepare a manuscript about the cross-dataset and cross-modality evaluation.
 
 The published material should identify maintainers for the code, panels, viewer example, and
@@ -524,10 +524,10 @@ revise the result.
 
 - Witold E. Wolski — Functional Genomics Center Zurich (FGCZ), ETH Zurich / University of Zurich;
   SIB Swiss Institute of Bioinformatics — `witold.wolski@fgcz.uzh.ch`
+- Sam van Puyenbroeck — CompOmics, VIB-UGent Center for Medical Biotechnology; Department of
+  Biomolecular Medicine, Ghent University — `sam.vanpuyenbroeck@ugent.be`
 - Tobias Kockmann — Functional Genomics Center Zurich (FGCZ), ETH Zurich / University of Zurich —
   `tobias.kockmann@fgcz.ethz.ch`
-- Christoph B. Messner — Precision Proteomics Center, Swiss Institute of Allergy and Asthma
-  Research (SIAF), University of Zurich, Davos
 
 ## 15. Decisions to close before the event
 

@@ -1,4 +1,4 @@
-# plasma-ms
+# apb-plasma
 
 Reference material for **plasma mass-spectrometry proteomics QC** on the
 [anndata-omics-bridge](https://github.com/anndata-omics-bridge) spine: datasets, quality-marker
@@ -26,7 +26,7 @@ A haemolysed sample, a platelet-contaminated draw, or a coagulation-activated tu
 well-formed plasma protein table while biasing its biological interpretation. Instrument-level QC
 does not detect every such sample-quality problem.
 
-`plasma-ms` collects reference panels, datasets, and candidate measures for detecting these effects
+`apb-plasma` collects reference panels, datasets, and candidate measures for detecting these effects
 in studies with hundreds of biological samples. APB provides the quantitative container. It links
 sample metadata with protein-, peptide-, and ion-level measurements and can enrich those data with
 panel annotations, quality results, reference comparisons, and provenance. The hackathon will test
